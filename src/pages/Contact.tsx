@@ -13,7 +13,7 @@ export default function Contact() {
             Let's talk.
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl leading-relaxed">
-            I'm best reached on LinkedIn. If you're working on platform or API products in a regulated environment, I'd enjoy connecting.
+            I'm best reached on LinkedIn. If you're working on platform or API products in a regulated environment, I'd enjoy the conversation.
           </p>
         </div>
 
@@ -42,13 +42,13 @@ export default function Contact() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">London</h3>
             <p className="text-gray-600 leading-relaxed text-sm">
-              Based in London. Open to senior and staff PM roles at fintech infrastructure companies, payments platforms, and regulated enterprise SaaS — where the product problem involves multi-party ecosystems, compliance workflows, or platform activation at scale.
+              Senior Product Manager at Global Relay, based in London. Focused on platform and API products in regulated financial communications.
             </p>
           </div>
         </div>
 
         <div className="border-l-4 border-navy-900 bg-navy-50 rounded-r-xl p-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">What I'm looking for</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Background</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
               {
@@ -56,12 +56,12 @@ export default function Contact() {
                 body: 'Fintech infrastructure, payments, RegTech, compliance platforms, regulated enterprise SaaS.',
               },
               {
-                heading: 'Problem type',
+                heading: 'Specialism',
                 body: 'Multi-party API ecosystems, regulatory complexity, vendor negotiation, platform activation at scale.',
               },
               {
-                heading: 'Level',
-                body: 'Senior PM or Staff PM. I work best where the constraint is the job, not where the path is already defined.',
+                heading: 'Experience',
+                body: '12 years in product management across telecom infrastructure, tax compliance, and financial communications.',
               },
             ].map((item) => (
               <div key={item.heading}>

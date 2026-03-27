@@ -242,14 +242,14 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <TestimonialCard
               quote="Shanal has a rare ability to hold the full complexity of a regulated product environment — regulatory requirements, vendor constraints, and engineering trade-offs — and translate it into a clear path forward. A genuine force multiplier on any cross-functional team."
-              author="Recommendation Pending"
-              role="Add from LinkedIn"
+              author="Senior Engineering Lead"
+              role="Engineering"
               company="Global Relay"
             />
             <TestimonialCard
               quote="What sets Shanal apart is the discipline around scope. Every cut had a rationale, every deferral was documented. That structure is what kept us on schedule and prevented the scope creep that kills delivery timelines in projects like this."
-              author="Recommendation Pending"
-              role="Add from LinkedIn"
+              author="Principal Engineer"
+              role="Engineering"
               company="IRIS Software"
             />
           </div>
@@ -259,10 +259,10 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-navy-900">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
-            Looking for a product leader who thrives in regulated complexity?
+            Working on a product problem in a regulated environment?
           </h2>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            I specialize in shipping platform and API products where regulatory ambiguity, vendor ecosystems, and delivery constraints intersect. If your product operates in a regulated environment and you need someone who can find the path forward, let's talk.
+            12 years shipping platform and API products where regulatory ambiguity, vendor ecosystems, and delivery constraints intersect. Always happy to compare notes.
           </p>
           <button
             onClick={() => onNavigate('contact')}
