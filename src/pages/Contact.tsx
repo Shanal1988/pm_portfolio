@@ -9,8 +9,7 @@ export default function Contact() {
             Let's Connect
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Senior or Staff PM roles at Wise, Revolut, Monzo, ComplyAdvantage, Ebury, Airwallex, or Stripe —
-            bringing infrastructure PM expertise to fintech payment and compliance platforms.
+            Open to product leadership opportunities and networking with professionals in fintech, RegTech, and platform infrastructure.
           </p>
         </div>
 
@@ -60,40 +59,39 @@ export default function Contact() {
         <div className="bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl p-8 md:p-12">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              Target Opportunities
+              Areas of Interest
             </h2>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white rounded-lg p-6">
                 <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
                   <Briefcase className="w-5 h-5 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-gray-900 mb-2">Target Companies</h3>
+                <h3 className="font-bold text-gray-900 mb-2">Industry Focus</h3>
                 <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• Wise (payments infrastructure)</li>
-                  <li>• Revolut (fintech platform)</li>
-                  <li>• Monzo (mobile banking)</li>
-                  <li>• ComplyAdvantage (compliance)</li>
-                  <li>• Ebury (FX & payments)</li>
-                  <li>• Airwallex (payments infra)</li>
-                  <li>• Stripe (payments platform)</li>
+                  <li>• Fintech & Payments</li>
+                  <li>• Regulatory Technology</li>
+                  <li>• Financial Infrastructure</li>
+                  <li>• Compliance Platforms</li>
+                  <li>• Enterprise SaaS</li>
+                  <li>• B2B Platforms</li>
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-6">
                 <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
                   <MapPin className="w-5 h-5 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-gray-900 mb-2">Role Level & Location</h3>
+                <h3 className="font-bold text-gray-900 mb-2">Location & Role</h3>
                 <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• Senior Product Manager</li>
-                  <li>• Staff Product Manager</li>
                   <li>• Based in London, UK</li>
-                  <li>• Open to hybrid/remote</li>
+                  <li>• Product Leadership roles</li>
+                  <li>• Senior / Staff PM level</li>
+                  <li>• Hybrid & remote friendly</li>
                 </ul>
               </div>
             </div>
 
             <div className="bg-white rounded-lg p-6 mb-8">
-              <h3 className="font-bold text-gray-900 mb-3">Focus Areas</h3>
+              <h3 className="font-bold text-gray-900 mb-3">Expertise Areas</h3>
               <div className="flex flex-wrap gap-2">
                 {[
                   'Payment Infrastructure',
@@ -117,10 +115,10 @@ export default function Contact() {
 
             <div className="text-center">
               <p className="text-gray-700 leading-relaxed mb-6">
-                I've spent 12 years solving infrastructure PM problems for the exact financial institutions
-                that fintech platforms serve. Multi-party API orchestration, regulatory complexity, vendor
-                negotiation, platform activation at scale. If you're building payment infrastructure or
-                compliance platforms where those are core product challenges, let's connect.
+                I've spent 12 years solving infrastructure PM problems for regulated financial institutions.
+                Multi-party API orchestration, regulatory complexity, vendor negotiation, and platform
+                activation at scale. If you're working on payment infrastructure or compliance platforms
+                where these are core challenges, I'd enjoy connecting.
               </p>
               <a
                 href="https://www.linkedin.com/in/shanalagrawal"

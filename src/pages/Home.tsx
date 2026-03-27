@@ -12,7 +12,7 @@ export default function Home({ onNavigate }: HomeProps) {
     {
       company: 'Global Relay',
       typeTag: 'Platform Strategy',
-      outcomeTags: ['167% seat growth', 'Doubled ARR', '24 months'],
+      outcomeTags: ['167% growth', 'Doubled ARR', '24 months'],
       title: 'The Compliance Pivot',
       hook: 'Steered the product away from competing on UC features toward federated channel compliance — ahead of the SEC and FCA off-channel enforcement wave.',
       sections: {
@@ -21,7 +21,7 @@ export default function Home({ onNavigate }: HomeProps) {
         discovery: 'Client conversations with compliance officers and IT administrators revealed the pain was regulatory exposure, not feature gaps. Competitive analysis showed no CPaaS provider had built configurable multi-channel compliance archiving at enterprise scale.',
         solution: 'Federated channel compliance architecture — configurable to absorb multiple A2P regulatory outcomes simultaneously rather than hardcoding against a framework still in flux.',
         execution: 'Negotiated API capability requirements directly with Twilio\'s product team. Aligned a sceptical commercial team. Shipped through live regulatory ambiguity — A2P framework changed multiple times during delivery.',
-        impact: '167% seat growth, doubled ARR over 24 months.',
+        impact: '167% growth, doubled ARR over 24 months.',
         learnings: 'Designing for regulatory ambiguity requires configurable architecture. Shipping before the framework settles is a competitive advantage if you build the right abstraction layer.',
       },
     },
@@ -145,7 +145,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
               <div className="text-5xl font-bold text-navy-900 mb-2">167%</div>
-              <div className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Paid seat growth</div>
+              <div className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Growth</div>
               <div className="text-xs text-gray-600 mt-2">Global Relay, 24 months</div>
             </div>
             <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
