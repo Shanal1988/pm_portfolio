@@ -1,129 +1,91 @@
-import { Mail, Linkedin, MapPin, Briefcase } from 'lucide-react';
+import { Linkedin, MapPin } from 'lucide-react';
 
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white pt-24 pb-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-            Let's Connect
+      <div className="max-w-4xl mx-auto">
+
+        <div className="mb-16">
+          <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
+            CONTACT
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            Let's talk.
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Open to product leadership opportunities and networking with professionals in fintech, RegTech, and platform infrastructure.
+          <p className="text-xl text-gray-600 max-w-2xl leading-relaxed">
+            I'm best reached on LinkedIn. If you're working on platform or API products in a regulated environment, I'd enjoy connecting.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           <a
             href="https://www.linkedin.com/in/shanalagrawal"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-50 hover:bg-blue-100 rounded-xl p-8 transition-all duration-300 border-2 border-transparent hover:border-blue-600 hover:shadow-lg transform hover:scale-105"
+            className="group bg-white border-2 border-gray-200 hover:border-navy-900 rounded-xl p-8 transition-all duration-200 hover:shadow-lg"
           >
-            <div className="flex items-start">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Linkedin className="w-6 h-6 text-white" />
-              </div>
-              <div className="ml-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">LinkedIn</h3>
-                <p className="text-gray-700 mb-3">
-                  Connect with me on LinkedIn to see my full professional background and stay
-                  updated with my latest work.
-                </p>
-                <span className="text-blue-600 font-medium">
-                  linkedin.com/in/shanalagrawal →
-                </span>
-              </div>
+            <div className="w-12 h-12 bg-navy-900 rounded-lg flex items-center justify-center mb-5">
+              <Linkedin className="w-6 h-6 text-white" />
             </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">LinkedIn</h3>
+            <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+              The best place to see the full picture — work history, recommendations, and current focus.
+            </p>
+            <span className="text-sm font-semibold text-navy-900 group-hover:underline">
+              linkedin.com/in/shanalagrawal →
+            </span>
           </a>
 
-          <div className="bg-gray-50 rounded-xl p-8 border-2 border-gray-200">
-            <div className="flex items-start">
-              <div className="w-12 h-12 bg-gray-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Mail className="w-6 h-6 text-white" />
-              </div>
-              <div className="ml-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
-                <p className="text-gray-700 mb-3">
-                  For direct inquiries, collaboration opportunities, or if you'd like to discuss
-                  how I can help your team.
-                </p>
-                <p className="text-gray-600 font-medium">
-                  Available via LinkedIn messaging
-                </p>
-              </div>
+          <div className="bg-gray-50 border-2 border-gray-200 rounded-xl p-8">
+            <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mb-5">
+              <MapPin className="w-6 h-6 text-gray-600" />
             </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">London</h3>
+            <p className="text-gray-600 leading-relaxed text-sm">
+              Based in London. Open to senior and staff PM roles at fintech infrastructure companies, payments platforms, and regulated enterprise SaaS — where the product problem involves multi-party ecosystems, compliance workflows, or platform activation at scale.
+            </p>
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl p-8 md:p-12">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              Areas of Interest
-            </h2>
-            <div className="flex justify-center mb-8">
-              <div className="bg-white rounded-lg p-6 max-w-md w-full">
-                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
-                  <Briefcase className="w-5 h-5 text-blue-600" />
-                </div>
-                <h3 className="font-bold text-gray-900 mb-2">Industry Focus</h3>
-                <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• Fintech & Payments</li>
-                  <li>• Regulatory Technology</li>
-                  <li>• Financial Infrastructure</li>
-                  <li>• Compliance Platforms</li>
-                  <li>• Enterprise SaaS</li>
-                  <li>• B2B Platforms</li>
-                </ul>
+        <div className="border-l-4 border-navy-900 bg-navy-50 rounded-r-xl p-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">What I'm looking for</h2>
+          <div className="grid sm:grid-cols-3 gap-6">
+            {[
+              {
+                heading: 'Domain',
+                body: 'Fintech infrastructure, payments, RegTech, compliance platforms, regulated enterprise SaaS.',
+              },
+              {
+                heading: 'Problem type',
+                body: 'Multi-party API ecosystems, regulatory complexity, vendor negotiation, platform activation at scale.',
+              },
+              {
+                heading: 'Level',
+                body: 'Senior PM or Staff PM. I work best where the constraint is the job, not where the path is already defined.',
+              },
+            ].map((item) => (
+              <div key={item.heading}>
+                <div className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">{item.heading}</div>
+                <p className="text-sm text-gray-700 leading-relaxed">{item.body}</p>
               </div>
-            </div>
-
-            <div className="bg-white rounded-lg p-6 mb-8">
-              <h3 className="font-bold text-gray-900 mb-3">Expertise Areas</h3>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  'Payment Infrastructure',
-                  'API Orchestration',
-                  'Regulatory Workflows',
-                  'Multi-party Platforms',
-                  'Platform Activation',
-                  'Compliance Architecture',
-                  'Financial Infrastructure',
-                  'Fintech Scaling',
-                ].map((area, index) => (
-                  <span
-                    key={index}
-                    className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-medium rounded-full"
-                  >
-                    {area}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="text-center">
-              <p className="text-gray-700 leading-relaxed mb-6">
-                I've spent 12 years solving infrastructure PM problems for regulated financial institutions.
-                Multi-party API orchestration, regulatory complexity, vendor negotiation, and platform
-                activation at scale. If you're working on payment infrastructure or compliance platforms
-                where these are core challenges, I'd enjoy connecting.
-              </p>
-              <a
-                href="https://www.linkedin.com/in/shanalagrawal"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
-              >
-                <Linkedin className="w-5 h-5 mr-2" />
-                Connect on LinkedIn
-              </a>
-            </div>
+            ))}
+          </div>
+          <div className="mt-8">
+            <a
+              href="https://www.linkedin.com/in/shanalagrawal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-4 bg-navy-900 text-white font-semibold rounded-lg hover:bg-navy-800 transition-colors"
+            >
+              <Linkedin className="w-5 h-5 mr-2" />
+              Connect on LinkedIn
+            </a>
           </div>
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-sm text-gray-500">
-            12 years of experience in product management • Currently Senior Product Manager at Global Relay
+          <p className="text-sm text-gray-400">
+            Senior Product Manager · Global Relay · London
           </p>
         </div>
       </div>

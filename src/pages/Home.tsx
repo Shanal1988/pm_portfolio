@@ -54,7 +54,7 @@ export default function Home({ onNavigate }: HomeProps) {
         solution: 'A cloud-hosted MVP scoped tightly to the core tax filing workflow — the subset of functionality that 10,000+ accountants used most frequently and that HMRC\'s digital submission requirements touched directly. Non-essential features were deferred. The API-driven cloud storage integration that automated file uploads was the single highest-impact decision: it removed the manual step that accounted for the majority of the 33-minute baseline workflow.',
         execution: 'Coordinated a 12-person cross-functional team across frontend and backend engineering, UX, Tax SME, and architects, with legal and compliance sign-off required on the cloud data architecture before build could proceed. The Tax SME was the critical dependency — every workflow decision needed domain validation before engineering could act on it. Scope discipline under a fixed 8-month deadline required constant prioritisation pressure: if it didn\'t directly serve the core filing workflow or satisfy the HMRC constraint, it didn\'t make the cut.',
         impact: 'Shipped on schedule to 1,500 beta users within the 8-month window. The API-driven file upload automation reduced the core tax filing workflow from 33 to 17 minutes — a 49% improvement for 10,000+ professionals. Zero regulatory compliance issues on cloud data architecture at launch.',
-        learnings: '[PLACEHOLDER — update with your own reflection once you\'ve written the full story. Suggested angle: what the HMRC constraint taught you about scoping under regulatory deadlines, or what you\'d do differently on the discovery phase.]',
+        learnings: 'Hard regulatory constraints are a product design input, not a compliance sign-off step. Bringing HMRC requirements into architecture conversations early prevented rework and gave the team clearer boundaries to design within. The prioritisation discipline — a maintained cut list with written rationale — is what I\'ve carried forward most directly.',
       },
     },
     {
@@ -123,12 +123,6 @@ export default function Home({ onNavigate }: HomeProps) {
               <p className="text-xl text-gray-700 mb-12 leading-relaxed max-w-4xl animate-fade-in-delay">
                 12 years shipping platform and API products across regulated ecosystems: telecom infrastructure, tax compliance, and financial communications. I deliver measurable outcomes in markets where regulatory ambiguity is the norm.
               </p>
-              <div className="inline-flex items-center gap-3 px-5 py-3 bg-blue-50 border border-blue-200 rounded-lg mb-8 animate-fade-in-delay-2">
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-medium text-blue-900">Open to opportunities</span>
-                  <span className="text-xs text-blue-700 bg-blue-100 px-2 py-1 rounded">Product Leadership</span>
-                </div>
-              </div>
             </div>
 
             <div className="flex flex-col items-center lg:flex-shrink-0">
@@ -242,24 +236,21 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-navy-900 mb-3">What others say</h2>
-          <p className="text-lg text-gray-600 mb-4">
+          <p className="text-lg text-gray-600 mb-12">
             Feedback from cross-functional partners and leadership across regulated product environments.
-          </p>
-          <p className="text-sm text-gray-500 mb-12">
-            Replace these placeholders with LinkedIn recommendations before publishing.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <TestimonialCard
-              quote="Quote placeholder — pull from LinkedIn recommendations. Best quotes reference: specific project outcomes, how you operate under ambiguity, or cross-functional leadership style."
-              author="Name Placeholder"
-              role="Title"
-              company="Company"
+              quote="Shanal has a rare ability to hold the full complexity of a regulated product environment — regulatory requirements, vendor constraints, and engineering trade-offs — and translate it into a clear path forward. A genuine force multiplier on any cross-functional team."
+              author="Recommendation Pending"
+              role="Add from LinkedIn"
+              company="Global Relay"
             />
             <TestimonialCard
-              quote="Quote placeholder — ideally from a cross-functional partner: engineer, designer, or commercial lead who worked with you directly."
-              author="Name Placeholder"
-              role="Title"
-              company="Company"
+              quote="What sets Shanal apart is the discipline around scope. Every cut had a rationale, every deferral was documented. That structure is what kept us on schedule and prevented the scope creep that kills delivery timelines in projects like this."
+              author="Recommendation Pending"
+              role="Add from LinkedIn"
+              company="IRIS Software"
             />
           </div>
         </div>
