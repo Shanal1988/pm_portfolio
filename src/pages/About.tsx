@@ -127,13 +127,9 @@ export default function About({ onNavigate }: AboutProps) {
           </div>
         </section>
 
-        {/* What I'm Looking For */}
+        {/* Contact CTA */}
         <section>
           <div className="border-l-4 border-navy-900 bg-navy-50 p-8 rounded-r-xl">
-            <h3 className="text-xl font-bold text-navy-900 mb-4">Open to opportunities</h3>
-            <p className="text-base text-gray-800 leading-relaxed mb-6">
-              Senior and Staff PM roles at fintech infrastructure companies, payments platforms, and regulated enterprise SaaS in London — where the product problem involves multi-party API ecosystems, compliance workflows, or platform activation at scale.
-            </p>
             <button
               onClick={() => onNavigate('contact')}
               className="inline-flex items-center px-6 py-3 bg-navy-900 text-white font-semibold rounded-lg hover:bg-navy-800 transition-colors"
