@@ -110,17 +110,28 @@ export default function Home({ onNavigate }: HomeProps) {
     <div className="min-h-screen">
       <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full text-sm font-medium mb-8">
-            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-            Senior Product Manager · London
+          <div className="flex flex-col lg:flex-row lg:items-start gap-12">
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full text-sm font-medium mb-8">
+                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                Senior Product Manager · London
+              </div>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-navy-900 mb-8 leading-tight tracking-tight">
+                I find the path forward when the constraint{' '}
+                <span className="italic">is</span> the job.
+              </h1>
+              <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-4xl">
+                12 years of shipping platform and API products across regulated ecosystems, telecom infrastructure, tax compliance, and financial communications.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center lg:flex-shrink-0">
+              <div className="w-[180px] h-[180px] rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center">
+                <span className="text-sm text-gray-400">Photo</span>
+              </div>
+              <p className="text-xs text-gray-400 mt-3">Headshot placeholder</p>
+            </div>
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-navy-900 mb-8 leading-tight tracking-tight">
-            I find the path forward when the constraint{' '}
-            <span className="italic">is</span> the job.
-          </h1>
-          <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-4xl">
-            12 years of shipping platform and API products across regulated ecosystems, telecom infrastructure, tax compliance, and financial communications.
-          </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-0 mb-12 divide-x divide-gray-200">
             <div className="px-6 py-4">
@@ -182,7 +193,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-navy-900 mb-3">Selected Work</h2>
           <p className="text-lg text-gray-600 mb-12 max-w-3xl">
-            Three regulated industries. Three platform problems. Measurable outcomes each time.
+            Four regulated products. Three industries. Measurable outcomes each time.
           </p>
           <Accordion items={caseStudies} />
         </div>
