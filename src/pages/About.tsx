@@ -8,25 +8,25 @@ export default function About() {
       company: 'Global Relay',
       role: 'Senior Product Manager',
       duration: 'Aug 2025 - Present',
-      description: 'Leading product strategy for compliant communication and archiving platform serving regulated financial institutions.',
+      description: 'Shipping enterprise communication and archiving infrastructure for regulated financial institutions. Doubled platform ARR in 24 months.',
     },
     {
       company: 'Global Relay',
       role: 'Product Manager',
       duration: 'May 2021 - Aug 2025',
-      description: 'Owned product delivery for enterprise SaaS platform, shipping features that scaled user base from 30k to 80k YoY.',
+      description: 'Built multi-party messaging infrastructure under evolving A2P 10DLC regulations. Scaled platform from 30k to 80k users, processed 2M+ messages monthly.',
     },
     {
       company: 'IRIS Software Group',
       role: 'Product Manager',
       duration: 'May 2020 - May 2021',
-      description: 'Led cloud migration of tax compliance platform serving 10,000+ UK accountants.',
+      description: 'Shipped desktop-to-cloud migration for tax compliance platform serving 10,000+ UK accountants. Reduced core workflow time by 49% under fixed 8-month deadline.',
     },
     {
       company: 'Infosys (BT/Openreach)',
       role: 'Product Owner',
       duration: 'Jul 2018 - Apr 2020',
-      description: 'Designed integration solutions for national-scale telecom infrastructure.',
+      description: 'Built integration platform for national telecom infrastructure serving 30M+ UK premises. Translated competing requirements from Sky, Vodafone, and BT into single architecture. Cut SLA costs 15%, reduced delivery time 20%.',
     },
   ];
 
@@ -74,26 +74,25 @@ export default function About() {
             </h1>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
               <p className="text-xl text-gray-600">
-                Most PMs treat regulatory complexity as a constraint to manage around. I treat it as
-                the product problem itself — because that's where the interesting work actually lives.
+                Regulatory complexity isn't something to work around. It defines what's shippable. I build
+                product where vendor limitations, compliance frameworks, and enterprise requirements determine
+                architecture before features.
               </p>
               <p>
-                My background runs across three structurally similar but jurisdictionally distinct environments:
-                telecom infrastructure at BT/Openreach and Telstra, tax and accounting compliance SaaS at IRIS Software,
-                and financial communication compliance at Global Relay. Each required learning the regulatory constraints,
-                the vendor ecosystem, and the enterprise client needs fast — and shipping before the environment fully settled.
-                The pattern that repeats isn't domain expertise in any one area. It's a method for operating in regulated
-                markets where the path forward requires figuring out what's even possible before deciding what to build.
+                My track record spans three regulated environments: telecom infrastructure at BT/Openreach,
+                tax compliance at IRIS Software, and financial communications at Global Relay. Different sectors,
+                different regulations, same infrastructure challenge — orchestrating vendor dependencies and
+                regulatory constraints into platforms that scale.
               </p>
               <p className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg">
-                CPaaS aggregators and payment processors are structurally identical: multi-party API dependencies, regulated
-                enterprise clients, compliance frameworks that change faster than product cycles. The financial institutions
-                I've been building for at Global Relay are the same ones that Wise, Revolut, Monzo, and Ebury serve.
-                The domain is new. The architecture isn't.
+                The pattern repeats across domains. Multi-party API platforms in regulated markets follow identical
+                architectural logic whether you're managing messaging compliance, tax filing infrastructure, or
+                payment processing. The skill is shipping when what's technically possible has to be discovered
+                before product decisions can be made.
               </p>
               <p className="font-medium text-gray-900 text-lg">
-                The roles that fit: Senior or Staff PM at fintech infrastructure, payments platforms, or compliance SaaS —
-                where the product problem involves API ecosystems, regulatory workflows, or activation at scale.
+                Looking for Senior or Staff PM roles where regulatory constraints, API orchestration, and enterprise
+                scale aren't nice-to-haves — they're the core product problem.
               </p>
             </div>
           </div>

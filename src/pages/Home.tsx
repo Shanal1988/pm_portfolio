@@ -60,22 +60,22 @@ export default function Home({ onNavigate }: HomeProps) {
             Senior Product Manager · London
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-[1.05] tracking-tight">
-            I find the path forward when the constraint{' '}
+            I ship platform infrastructure that{' '}
             <span className="relative inline-block">
-              <span className="text-blue-600 italic">is</span>
+              <span className="text-blue-600 italic">scales</span>
               <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200 -z-10 opacity-50"></span>
             </span>{' '}
-            the job.
+            under constraint.
           </h1>
           <p className="text-xl text-gray-600 mb-4 leading-relaxed max-w-3xl">
-            12 years shipping multi-party API platforms for regulated financial institutions across
-            three ecosystems: CPaaS, tax compliance, telecom infrastructure. Same architectural pattern.
-            Different jurisdictions.
+            12 years building multi-party API platforms across regulated environments: financial communications,
+            tax compliance, and national telecom infrastructure. The product is orchestrating vendor dependencies,
+            regulatory frameworks, and enterprise requirements into architecture that ships.
           </p>
           <p className="text-lg text-gray-500 mb-10 max-w-3xl leading-relaxed">
-            CPaaS aggregators orchestrate vendor APIs and regulated enterprise clients. Payment
-            processors do the same. The infrastructure thinking transfers directly. Now targeting
-            fintech roles where that platform foundation maps precisely to payment infrastructure.
+            I've doubled ARR in compliance platforms, cut workflow times by 49%, and reduced national infrastructure
+            costs by 15%. Looking for Senior or Staff PM roles where regulatory constraints, API orchestration, and
+            enterprise scale define the problem space.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button
@@ -99,7 +99,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="py-12 px-4 sm:px-6 lg:px-8 border-y border-gray-100 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-6 text-center">
-            Multi-party API platform clients
+            Platform Infrastructure Experience
           </p>
           <div className="flex flex-wrap justify-center gap-x-12 gap-y-4">
             {companies.map((co) => (
@@ -116,8 +116,8 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16 text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Selected work</h2>
-            <p className="text-gray-600 text-xl max-w-3xl mx-auto">Infrastructure thinking under constraint: vendor negotiation, regulatory ambiguity, multi-party platform design.</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Proven Impact</h2>
+            <p className="text-gray-600 text-xl max-w-3xl mx-auto">Vendor negotiation, regulatory navigation, and multi-party platform design at enterprise scale.</p>
           </div>
           <div className="space-y-8">
             {proofPoints.map((point, index) => (
@@ -130,13 +130,13 @@ export default function Home({ onNavigate }: HomeProps) {
               >
                 <div className={`absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-blue-500 to-blue-600 rounded-l-2xl transition-all duration-300 ${hoveredProof === index ? 'opacity-100' : 'opacity-0'}`}></div>
                 <div className="flex flex-col md:flex-row md:items-start md:gap-12">
-                  <div className="md:w-52 flex-shrink-0 mb-6 md:mb-0">
-                    <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-xl mb-4">
-                      <CheckCircle2 className="w-6 h-6 text-blue-600" />
+                  <div className="md:w-64 flex-shrink-0 mb-6 md:mb-0 bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6 border-2 border-blue-200">
+                    <div className="inline-flex items-center justify-center w-14 h-14 bg-blue-600 rounded-xl mb-4 shadow-lg">
+                      <CheckCircle2 className="w-7 h-7 text-white" />
                     </div>
-                    <div className="text-4xl font-bold text-gray-900 leading-tight mb-2">{point.metric}</div>
-                    <div className="text-sm font-medium text-gray-500 uppercase tracking-wide">{point.context}</div>
-                    <div className="mt-4 px-3 py-1.5 bg-slate-50 rounded-lg text-xs font-medium text-slate-600 inline-block">
+                    <div className="text-5xl font-bold text-blue-600 leading-tight mb-2">{point.metric}</div>
+                    <div className="text-sm font-bold text-gray-700 uppercase tracking-wide mb-3">{point.context}</div>
+                    <div className="px-3 py-2 bg-white rounded-lg text-xs font-semibold text-slate-700 border border-slate-200">
                       {point.highlight}
                     </div>
                   </div>
@@ -171,22 +171,22 @@ export default function Home({ onNavigate }: HomeProps) {
                 Core Competencies
               </div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
-                The infrastructure pattern that transfers to fintech
+                Infrastructure PM thinking that transfers
               </h2>
               <div className="space-y-5 text-gray-700 leading-relaxed text-lg">
                 <p>
-                  CPaaS aggregators orchestrate vendor APIs, regulatory constraints, and regulated enterprise clients.
-                  Payment processors do exactly the same. The financial institutions I've served at Global Relay
-                  are the same clients that Wise, Revolut, Monzo, and Ebury serve today.
+                  Multi-party API platforms follow the same architectural pattern regardless of domain. Orchestrating
+                  vendor dependencies, regulatory constraints, and enterprise clients — whether that's messaging compliance,
+                  tax filing infrastructure, or national telecom networks.
                 </p>
                 <p>
-                  This isn't a career pivot. It's applying infrastructure PM thinking to a new domain. The pattern
-                  repeats: vendor negotiation, multi-party API design, shipping through regulatory ambiguity,
-                  prioritization under constraint.
+                  The skill isn't deep domain expertise in any single sector. It's the method for operating where
+                  vendor limitations, regulatory frameworks, and enterprise requirements define what's shippable.
+                  Each environment I've worked in required figuring out what's possible before deciding what to build.
                 </p>
                 <p className="font-medium text-gray-900">
-                  Telecom infrastructure, tax SaaS, financial communications compliance — all teaching the
-                  same lesson. The domain changes. The architecture doesn't.
+                  Three different regulated markets. Same infrastructure thinking. Same approach to prioritization
+                  under constraint.
                 </p>
               </div>
             </div>
@@ -194,18 +194,18 @@ export default function Home({ onNavigate }: HomeProps) {
               {[
                 {
                   icon: Layers,
-                  label: 'Vendor orchestration as platform architecture',
-                  detail: 'Twilio, BT/Openreach partners, HMRC integrations. Understanding vendor constraints and turning them into product decisions — exactly how payment networks work.',
+                  label: 'Vendor orchestration as product strategy',
+                  detail: 'Negotiated API capabilities with Twilio, managed telecom partner integrations, coordinated HMRC data flows. The product is understanding what vendors will and won\'t support, then building architecture around those constraints.',
                 },
                 {
                   icon: Zap,
-                  label: 'Multi-party API design that scales',
-                  detail: 'Three partners, competing requirements, one platform. Same thinking applies to payment processor networks: merchants, banks, fintech platforms on one infrastructure.',
+                  label: 'Multi-party platform design',
+                  detail: 'Built single platforms that served competing enterprise requirements without bespoke implementations. Sky, Vodafone, and BT on one architecture. Financial institutions with different compliance needs on shared infrastructure.',
                 },
                 {
                   icon: Shield,
-                  label: 'Shipping through regulatory transition',
-                  detail: 'A2P 10DLC, HMRC requirements, FCA/SEC enforcement waves. Built product that absorbs regulatory change without breaking. Core fintech skill.',
+                  label: 'Shipping during regulatory uncertainty',
+                  detail: 'A2P 10DLC launched while carrier enforcement was still inconsistent. Tax compliance migrations under live HMRC filing windows. Product that ships before the regulatory environment settles.',
                 },
               ].map((item, i) => (
                 <div key={i} className="group bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
@@ -233,17 +233,17 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
         <div className="max-w-4xl mx-auto relative text-center">
           <h2 className="text-4xl font-bold mb-6">
-            Targeting fintech infrastructure
+            What I'm looking for
           </h2>
           <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-            Senior or Staff PM roles at Wise, Revolut, Monzo, ComplyAdvantage, Ebury, Airwallex, or Stripe —
-            where product problems involve payment networks, API orchestration, regulatory workflows, or platform
-            activation at scale. Infrastructure PM with a financial institutions client base seeking the next domain.
+            Senior or Staff PM roles where regulatory constraints, API orchestration, and enterprise scale
+            define the core product challenge. Companies building multi-party platforms in regulated markets —
+            whether that's fintech infrastructure, compliance SaaS, or B2B API products.
           </p>
           <p className="text-gray-400 mb-10 leading-relaxed text-lg">
-            The financial compliance problems I solved at Global Relay are identical to those fintech platforms solve daily.
-            Vendor dependencies, regulatory frameworks, multi-party requirements. Same architecture. Bringing that foundation
-            to payment infrastructure.
+            The pattern I've shipped across three ecosystems: vendor negotiation as product strategy, regulatory
+            navigation as prioritization, multi-party requirements as architecture. Looking for roles where
+            that infrastructure thinking is the job.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
