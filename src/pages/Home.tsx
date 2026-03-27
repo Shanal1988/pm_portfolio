@@ -1,7 +1,6 @@
 import { ArrowRight, Building2, Target, Layers, TrendingUp } from 'lucide-react';
 import MetricCard from '../components/MetricCard';
 import Accordion from '../components/Accordion';
-import TestimonialCard from '../components/TestimonialCard';
 
 interface HomeProps {
   onNavigate: (page: string) => void;
@@ -229,29 +228,6 @@ export default function Home({ onNavigate }: HomeProps) {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-navy-900 mb-3">What others say</h2>
-          <p className="text-lg text-gray-600 mb-12">
-            Feedback from cross-functional partners and leadership across regulated product environments.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <TestimonialCard
-              quote="Shanal has a rare ability to hold the full complexity of a regulated product environment — regulatory requirements, vendor constraints, and engineering trade-offs — and translate it into a clear path forward. A genuine force multiplier on any cross-functional team."
-              author="Senior Engineering Lead"
-              role="Engineering"
-              company="Global Relay"
-            />
-            <TestimonialCard
-              quote="What sets Shanal apart is the discipline around scope. Every cut had a rationale, every deferral was documented. That structure is what kept us on schedule and prevented the scope creep that kills delivery timelines in projects like this."
-              author="Principal Engineer"
-              role="Engineering"
-              company="IRIS Software"
-            />
           </div>
         </div>
       </section>
