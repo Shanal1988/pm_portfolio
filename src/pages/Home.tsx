@@ -42,6 +42,22 @@ export default function Home({ onNavigate }: HomeProps) {
       },
     },
     {
+      company: 'IRIS Software',
+      typeTag: 'Regulated Migration',
+      outcomeTags: ['49% faster workflow', '1,500 beta users', '8 months'],
+      title: 'Making Tax Digital — Desktop to Cloud',
+      hook: 'Led the migration of a locally-installed tax filing platform to cloud under a live HMRC regulatory deadline — shipped on schedule to 1,500 beta users in 8 months.',
+      sections: {
+        context: 'IRIS Element was a locally-installed desktop application used by 10,000+ UK accountants and tax professionals for individual and business tax filing. The product had no cloud presence and no omnichannel capability at a moment when HMRC\'s Making Tax Digital initiative was fundamentally changing how tax data could be submitted, stored, and accessed.',
+        why: 'HMRC\'s Making Tax Digital regulatory shift created a hard external deadline for compliance. Staying on desktop-only architecture would have left IRIS clients directly exposed to regulatory non-compliance — the same pattern as off-channel enforcement in financial communications. The migration wasn\'t optional; the question was what to build, what to cut, and how to ship it before the deadline.',
+        discovery: 'The HMRC constraints on cloud-hosted tax data defined the outer boundary of what was architecturally possible before a single requirement was written. Understanding those constraints precisely — what data could move to the cloud, under what conditions, with what access controls — was the first product decision, not the last. Discovery ran in parallel with constraint mapping across legal, compliance, and the Tax SME team to define what "done" could actually mean within the regulatory envelope.',
+        solution: 'A cloud-hosted MVP scoped tightly to the core tax filing workflow — the subset of functionality that 10,000+ accountants used most frequently and that HMRC\'s digital submission requirements touched directly. Non-essential features were deferred. The API-driven cloud storage integration that automated file uploads was the single highest-impact decision: it removed the manual step that accounted for the majority of the 33-minute baseline workflow.',
+        execution: 'Coordinated a 12-person cross-functional team across frontend and backend engineering, UX, Tax SME, and architects, with legal and compliance sign-off required on the cloud data architecture before build could proceed. The Tax SME was the critical dependency — every workflow decision needed domain validation before engineering could act on it. Scope discipline under a fixed 8-month deadline required constant prioritisation pressure: if it didn\'t directly serve the core filing workflow or satisfy the HMRC constraint, it didn\'t make the cut.',
+        impact: 'Shipped on schedule to 1,500 beta users within the 8-month window. The API-driven file upload automation reduced the core tax filing workflow from 33 to 17 minutes — a 49% improvement for 10,000+ professionals. Zero regulatory compliance issues on cloud data architecture at launch.',
+        learnings: '[PLACEHOLDER — update with your own reflection once you\'ve written the full story. Suggested angle: what the HMRC constraint taught you about scoping under regulatory deadlines, or what you\'d do differently on the discovery phase.]',
+      },
+    },
+    {
       company: 'BT / Openreach',
       typeTag: 'API Platform',
       outcomeTags: ['20% faster delivery', '15% SLA cost reduction'],
