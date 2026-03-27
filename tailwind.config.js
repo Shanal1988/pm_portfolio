@@ -5,6 +5,8 @@ export default {
     extend: {
       colors: {
         'navy': {
+          50: '#f0f4f8',
+          100: '#d9e2ec',
           800: '#1e3a5f',
           900: '#0f172a',
         },
