@@ -76,9 +76,9 @@ export default function About({ onNavigate }: AboutProps) {
           </h1>
 
           {/* Two-column layout */}
-          <div className="grid lg:grid-cols-5 gap-12">
-            {/* Left column - 60% (3 columns) */}
-            <div className="lg:col-span-3 space-y-6 text-base text-gray-700 leading-relaxed">
+          <div className="flex flex-col md:flex-row gap-12">
+            {/* Left column - 60% */}
+            <div className="md:w-[60%] space-y-6 text-base text-gray-700 leading-relaxed">
               <p>
                 Most PMs treat regulatory complexity as a constraint to manage around. I treat it as the product problem itself — because that's where the interesting work actually lives.
               </p>
@@ -96,17 +96,19 @@ export default function About({ onNavigate }: AboutProps) {
               </p>
             </div>
 
-            {/* Right column - 40% (2 columns) */}
-            <div className="lg:col-span-2 space-y-6">
-              {methodCards.map((card, index) => (
-                <div
-                  key={index}
-                  className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors"
-                >
-                  <h3 className="text-lg font-bold text-navy-900 mb-3">{card.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{card.description}</p>
-                </div>
-              ))}
+            {/* Right column - 40% */}
+            <div className="md:w-[40%]">
+              <div className="space-y-6 md:sticky md:top-24">
+                {methodCards.map((card, index) => (
+                  <div
+                    key={index}
+                    className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors"
+                  >
+                    <h3 className="text-lg font-bold text-navy-900 mb-3">{card.title}</h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">{card.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
