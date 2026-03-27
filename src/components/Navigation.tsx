@@ -44,10 +44,10 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
             onClick={() => handleNavigate('home')}
             className="group flex items-center gap-2"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-md">
+            <div className="w-10 h-10 bg-gradient-to-br from-navy-800 to-navy-900 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-md">
               <span className="text-white font-bold text-lg">S</span>
             </div>
-            <span className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+            <span className="text-xl font-bold text-gray-900 group-hover:text-navy-900 transition-colors">
               Shanal Agrawal
             </span>
           </button>
@@ -59,10 +59,10 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                 <button
                   key={item.id}
                   onClick={() => handleNavigate(item.id)}
-                  className={`group relative px-4 py-2 rounded-xl text-sm font-semibold transition-all ${
+                  className={`group relative px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 ${
                     currentPage === item.id
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-slate-50'
+                      ? 'text-navy-900 bg-navy-50'
+                      : 'text-gray-700 hover:text-navy-900 hover:bg-gray-50'
                   }`}
                 >
                   <span className="flex items-center gap-2">
@@ -70,7 +70,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                     {item.label}
                   </span>
                   {currentPage === item.id && (
-                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-0.5 bg-blue-600 rounded-full"></span>
+                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-0.5 bg-navy-900 rounded-full"></span>
                   )}
                 </button>
               );
@@ -97,10 +97,10 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                 <button
                   key={item.id}
                   onClick={() => handleNavigate(item.id)}
-                  className={`flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all mb-1 ${
+                  className={`flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-200 mb-1 ${
                     currentPage === item.id
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:bg-gray-50'
+                      ? 'text-navy-900 bg-navy-50'
+                      : 'text-gray-700 hover:bg-gray-50 hover:text-navy-900'
                   }`}
                 >
                   <Icon className="w-5 h-5" />

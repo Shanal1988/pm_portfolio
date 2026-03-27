@@ -7,7 +7,7 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ quote, author, role, company }: TestimonialCardProps) {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-8 hover:border-gray-300 transition-colors">
+    <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
       <p className="text-lg text-gray-700 italic leading-relaxed mb-6">
         "{quote}"
       </p>

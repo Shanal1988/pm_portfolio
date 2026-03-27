@@ -67,69 +67,60 @@ export default function About({ onNavigate }: AboutProps) {
     <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Page Header */}
-        <div className="mb-16">
+        <div className="mb-20">
           <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
             ABOUT
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold text-navy-900 mb-12">
+          <h1 className="text-4xl sm:text-5xl font-bold text-navy-900 mb-6">
             The background behind the work.
           </h1>
+          <p className="text-xl text-gray-700 leading-relaxed max-w-3xl">
+            I build platform and API products in regulated markets where the constraint is the job.
+          </p>
+        </div>
 
-          {/* Two-column layout */}
-          <div className="flex flex-col md:flex-row gap-12">
-            {/* Left column - 60% */}
-            <div className="md:w-[60%] space-y-6 text-base text-gray-700 leading-relaxed">
-              <p>
-                Most PMs treat regulatory complexity as a constraint to manage around. I treat it as the product problem itself — because that's where the interesting work actually lives.
-              </p>
-              <p>
-                My background runs across three structurally similar but jurisdictionally distinct environments: telecom infrastructure at BT/Openreach and Telstra, tax and accounting compliance SaaS at IRIS Software, and financial communication compliance at Global Relay. Each required learning the regulatory constraints, the vendor ecosystem, and the enterprise client needs fast — and shipping before the environment fully settled. The pattern that repeats isn't domain expertise in any one area. It's a method for operating in regulated markets where the path forward requires figuring out what's even possible before deciding what to build.
-              </p>
-              <p>
-                At Global Relay, that method produced 167% seat growth and doubled ARR — not by competing on features with Teams and Zoom, but by reading the SEC and FCA off-channel enforcement wave before most of the market understood the regulatory exposure.
-              </p>
-              <p>
-                CPaaS aggregators and payment processors are structurally identical: multi-party API dependencies, regulated enterprise clients, compliance frameworks that change faster than product cycles. The financial institutions I've been building for at Global Relay are the same ones that Wise, Revolut, Monzo, and Ebury serve. The domain is new. The architecture isn't.
-              </p>
-              <p>
-                The roles that fit: Senior or Staff PM at fintech infrastructure, payments platforms, or compliance SaaS — where the product problem involves API ecosystems, regulatory workflows, or activation at scale.
-              </p>
-            </div>
-
-            {/* Right column - 40% */}
-            <div className="md:w-[40%]">
-              <div className="space-y-6 md:sticky md:top-24">
-                {methodCards.map((card, index) => (
-                  <div
-                    key={index}
-                    className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors"
-                  >
-                    <h3 className="text-lg font-bold text-navy-900 mb-3">{card.title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">{card.description}</p>
+        {/* Core Approach - Visual Cards */}
+        <div className="mb-20">
+          <h2 className="text-2xl font-bold text-navy-900 mb-8">Core approach</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {methodCards.map((card, index) => (
+              <div
+                key={index}
+                className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-navy-900 hover:shadow-lg transition-all duration-200"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-navy-900 text-white rounded-lg flex items-center justify-center font-bold">
+                    {index + 1}
                   </div>
-                ))}
+                  <div>
+                    <h3 className="text-lg font-bold text-navy-900 mb-2">{card.title}</h3>
+                    <p className="text-sm text-gray-700 leading-relaxed">{card.description}</p>
+                  </div>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
 
         {/* Career Timeline */}
-        <section className="mb-16">
-          <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-8">
-            EXPERIENCE
-          </div>
-          <div className="space-y-8 relative">
+        <section className="mb-20">
+          <h2 className="text-2xl font-bold text-navy-900 mb-8">Experience</h2>
+          <div className="space-y-6 relative">
             {/* Vertical line */}
-            <div className="absolute left-0 top-0 bottom-0 w-px bg-gray-200 hidden md:block"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-300 hidden md:block"></div>
 
             {timeline.map((entry, index) => (
-              <div key={index} className="relative md:pl-8">
+              <div key={index} className="relative md:pl-10 bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
                 {/* Timeline dot */}
-                <div className="absolute left-0 top-1 w-2 h-2 bg-navy-900 rounded-full transform -translate-x-[3.5px] hidden md:block"></div>
+                <div className="absolute left-0 top-8 w-3 h-3 bg-navy-900 rounded-full transform -translate-x-[5px] hidden md:block ring-4 ring-white"></div>
 
-                <div className="text-sm text-gray-500 mb-2">{entry.dateRange}</div>
-                <h3 className="text-xl font-bold text-navy-900 mb-1">{entry.role}</h3>
-                <div className="text-base font-medium text-gray-600 mb-2">{entry.company}</div>
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
+                  <div>
+                    <h3 className="text-lg font-bold text-navy-900">{entry.role}</h3>
+                    <div className="text-base font-medium text-gray-700">{entry.company}</div>
+                  </div>
+                  <div className="text-sm text-gray-600 font-medium sm:text-right">{entry.dateRange}</div>
+                </div>
                 <p className="text-base text-gray-700 leading-relaxed">{entry.description}</p>
               </div>
             ))}
@@ -138,13 +129,14 @@ export default function About({ onNavigate }: AboutProps) {
 
         {/* What I'm Looking For */}
         <section>
-          <div className="border-l-4 border-navy-900 bg-gray-50 p-6 rounded-r-lg">
-            <p className="text-base text-gray-700 leading-relaxed mb-4">
-              Open to Senior and Staff PM roles at fintech infrastructure companies, payments platforms, and regulated enterprise SaaS in London — where the product problem involves multi-party API ecosystems, compliance workflows, or platform activation at scale.
+          <div className="border-l-4 border-navy-900 bg-navy-50 p-8 rounded-r-xl">
+            <h3 className="text-xl font-bold text-navy-900 mb-4">Open to opportunities</h3>
+            <p className="text-base text-gray-800 leading-relaxed mb-6">
+              Senior and Staff PM roles at fintech infrastructure companies, payments platforms, and regulated enterprise SaaS in London — where the product problem involves multi-party API ecosystems, compliance workflows, or platform activation at scale.
             </p>
             <button
               onClick={() => onNavigate('contact')}
-              className="inline-flex items-center text-navy-900 font-semibold hover:underline"
+              className="inline-flex items-center px-6 py-3 bg-navy-900 text-white font-semibold rounded-lg hover:bg-navy-800 transition-colors"
             >
               Get in touch
               <ArrowRight className="ml-2 w-4 h-4" />

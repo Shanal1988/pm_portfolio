@@ -120,8 +120,8 @@ export default function Home({ onNavigate }: HomeProps) {
                 I find the path forward when the constraint{' '}
                 <span className="italic">is</span> the job.
               </h1>
-              <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-4xl">
-                12 years of shipping platform and API products across regulated ecosystems, telecom infrastructure, tax compliance, and financial communications.
+              <p className="text-xl text-gray-700 mb-12 leading-relaxed max-w-4xl">
+                12 years shipping platform and API products across regulated ecosystems: telecom infrastructure, tax compliance, and financial communications. I deliver measurable outcomes in markets where regulatory ambiguity is the norm.
               </p>
             </div>
 
@@ -133,22 +133,26 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-0 mb-12 divide-x divide-gray-200">
-            <div className="px-6 py-4">
-              <div className="text-4xl font-bold text-navy-900 mb-1">167%</div>
-              <div className="text-sm text-gray-500">Paid seat growth</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
+              <div className="text-5xl font-bold text-navy-900 mb-2">167%</div>
+              <div className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Paid seat growth</div>
+              <div className="text-xs text-gray-600 mt-2">Global Relay, 24 months</div>
             </div>
-            <div className="px-6 py-4">
-              <div className="text-4xl font-bold text-navy-900 mb-1">2x</div>
-              <div className="text-sm text-gray-500">ARR growth</div>
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
+              <div className="text-5xl font-bold text-navy-900 mb-2">2x</div>
+              <div className="text-sm font-semibold text-gray-700 uppercase tracking-wide">ARR growth</div>
+              <div className="text-xs text-gray-600 mt-2">Compliance platform pivot</div>
             </div>
-            <div className="px-6 py-4">
-              <div className="text-4xl font-bold text-navy-900 mb-1">20%</div>
-              <div className="text-sm text-gray-500">Faster partner delivery</div>
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
+              <div className="text-5xl font-bold text-navy-900 mb-2">49%</div>
+              <div className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Workflow reduction</div>
+              <div className="text-xs text-gray-600 mt-2">33 to 17 minutes, IRIS</div>
             </div>
-            <div className="px-6 py-4">
-              <div className="text-4xl font-bold text-navy-900 mb-1">12%</div>
-              <div className="text-sm text-gray-500">MAU growth post-launch</div>
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
+              <div className="text-5xl font-bold text-navy-900 mb-2">20%</div>
+              <div className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Faster delivery</div>
+              <div className="text-xs text-gray-600 mt-2">Multi-party API platform</div>
             </div>
           </div>
 
@@ -201,9 +205,9 @@ export default function Home({ onNavigate }: HomeProps) {
 
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-navy-900 mb-3">How I think</h2>
-          <p className="text-lg text-gray-600 mb-12 max-w-3xl">
-            The method that repeats across every regulated environment I've worked in.
+          <h2 className="text-4xl font-bold text-navy-900 mb-3">How I work</h2>
+          <p className="text-lg text-gray-700 mb-12 max-w-3xl">
+            The method that repeats across every regulated environment.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {methodCards.map((card, index) => {
@@ -211,11 +215,11 @@ export default function Home({ onNavigate }: HomeProps) {
               return (
                 <div
                   key={index}
-                  className="bg-white border border-gray-200 rounded-lg p-8 hover:border-gray-300 transition-colors"
+                  className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-navy-900 hover:shadow-lg transition-all duration-200"
                 >
-                  <Icon className="w-8 h-8 text-navy-900 mb-4" />
+                  <Icon className="w-10 h-10 text-navy-900 mb-4" />
                   <h3 className="text-xl font-bold text-navy-900 mb-3">{card.title}</h3>
-                  <p className="text-base text-gray-600 leading-relaxed">{card.description}</p>
+                  <p className="text-base text-gray-700 leading-relaxed">{card.description}</p>
                 </div>
               );
             })}

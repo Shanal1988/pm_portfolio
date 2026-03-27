@@ -12,11 +12,11 @@ export default function MetricCard({ value, label, size = 'lg' }: MetricCardProp
   };
 
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-navy-900 transition-colors duration-300">
+    <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
       <div className={`${sizeClasses[size]} font-bold text-navy-900 mb-2`}>
         {value}
       </div>
-      <div className="text-sm font-semibold text-gray-600 leading-tight">
+      <div className="text-sm font-semibold text-gray-700 leading-tight">
         {label}
       </div>
     </div>
