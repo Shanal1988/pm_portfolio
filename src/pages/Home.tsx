@@ -106,16 +106,31 @@ export default function Home({ onNavigate }: HomeProps) {
             12 years of shipping platform and API products across regulated ecosystems, telecom infrastructure, tax compliance, and financial communications.
           </p>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-            <MetricCard value="167%" label="Seat growth in 24 months" />
-            <MetricCard value="2x" label="ARR growth over the same period" />
-            <MetricCard value="20%" label="Faster delivery, Openreach platform" />
-            <MetricCard value="12%" label="MAU growth post-onboarding redesign" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-0 mb-12 divide-x divide-gray-200">
+            <div className="px-6 py-4">
+              <div className="text-4xl font-bold text-navy-900 mb-1">167%</div>
+              <div className="text-sm text-gray-500">Paid seat growth</div>
+            </div>
+            <div className="px-6 py-4">
+              <div className="text-4xl font-bold text-navy-900 mb-1">2x</div>
+              <div className="text-sm text-gray-500">ARR growth</div>
+            </div>
+            <div className="px-6 py-4">
+              <div className="text-4xl font-bold text-navy-900 mb-1">20%</div>
+              <div className="text-sm text-gray-500">Faster partner delivery</div>
+            </div>
+            <div className="px-6 py-4">
+              <div className="text-4xl font-bold text-navy-900 mb-1">12%</div>
+              <div className="text-sm text-gray-500">MAU growth post-launch</div>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <button
-              onClick={() => onNavigate('case-studies')}
+              onClick={() => {
+                const selectedWorkSection = document.getElementById('selected-work');
+                selectedWorkSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="group inline-flex items-center justify-center px-8 py-4 bg-navy-900 text-white font-semibold rounded-lg hover:bg-navy-800 transition-all"
             >
               See My Work
@@ -150,7 +165,7 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section id="selected-work" className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-navy-900 mb-3">Selected Work</h2>
           <p className="text-lg text-gray-600 mb-12 max-w-3xl">
