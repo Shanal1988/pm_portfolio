@@ -60,23 +60,36 @@ export default function Home({ onNavigate }: HomeProps) {
             Senior Product Manager · London
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-[1.05] tracking-tight">
-            I ship platform infrastructure that{' '}
+            I find the path forward when the constraint{' '}
             <span className="relative inline-block">
-              <span className="text-blue-600 italic">scales</span>
+              <span className="text-blue-600 italic">is</span>
               <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200 -z-10 opacity-50"></span>
             </span>{' '}
-            under constraint.
+            the job.
           </h1>
-          <p className="text-xl text-gray-600 mb-4 leading-relaxed max-w-3xl">
-            12 years building multi-party API platforms across regulated environments: financial communications,
-            tax compliance, and national telecom infrastructure. The product is orchestrating vendor dependencies,
-            regulatory frameworks, and enterprise requirements into architecture that ships.
+          <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-3xl">
+            12 years of shipping platform and API products across regulated ecosystems, telecom infrastructure, tax compliance, and financial communications.
           </p>
-          <p className="text-lg text-gray-500 mb-10 max-w-3xl leading-relaxed">
-            I've doubled ARR in compliance platforms, cut workflow times by 49%, and reduced national infrastructure
-            costs by 15%. Looking for Senior or Staff PM roles where regulatory constraints, API orchestration, and
-            enterprise scale define the problem space.
-          </p>
+
+          {/* Metrics Strip */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10 max-w-5xl">
+            <div className="bg-white border-2 border-blue-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-xl transition-all duration-300">
+              <div className="text-5xl font-bold text-blue-600 mb-2">167%</div>
+              <div className="text-sm font-semibold text-gray-700 leading-tight">Seat growth in 24 months</div>
+            </div>
+            <div className="bg-white border-2 border-blue-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-xl transition-all duration-300">
+              <div className="text-5xl font-bold text-blue-600 mb-2">2x</div>
+              <div className="text-sm font-semibold text-gray-700 leading-tight">ARR growth over the same period</div>
+            </div>
+            <div className="bg-white border-2 border-blue-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-xl transition-all duration-300">
+              <div className="text-5xl font-bold text-blue-600 mb-2">20%</div>
+              <div className="text-sm font-semibold text-gray-700 leading-tight">Faster delivery, Openreach platform</div>
+            </div>
+            <div className="bg-white border-2 border-blue-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-xl transition-all duration-300">
+              <div className="text-5xl font-bold text-blue-600 mb-2">12%</div>
+              <div className="text-sm font-semibold text-gray-700 leading-tight">MAU growth post-onboarding redesign</div>
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={() => onNavigate('case-studies')}
