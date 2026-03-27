@@ -19,7 +19,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/shanalagrawal"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-50 hover:bg-blue-100 rounded-xl p-8 transition-colors border-2 border-transparent hover:border-blue-600"
+            className="bg-blue-50 hover:bg-blue-100 rounded-xl p-8 transition-all duration-300 border-2 border-transparent hover:border-blue-600 hover:shadow-lg transform hover:scale-105"
           >
             <div className="flex items-start">
               <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -126,7 +126,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/shanalagrawal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
               >
                 <Linkedin className="w-5 h-5 mr-2" />
                 Connect on LinkedIn

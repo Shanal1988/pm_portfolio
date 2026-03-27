@@ -44,7 +44,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
             onClick={() => handleNavigate('home')}
             className="group flex items-center gap-2"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-navy-800 to-navy-900 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-md">
+            <div className="w-10 h-10 bg-gradient-to-br from-navy-800 to-navy-900 rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-md group-hover:shadow-lg">
               <span className="text-white font-bold text-lg">S</span>
             </div>
             <span className="text-xl font-bold text-gray-900 group-hover:text-navy-900 transition-colors">

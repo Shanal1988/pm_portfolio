@@ -116,13 +116,19 @@ export default function Home({ onNavigate }: HomeProps) {
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                 Senior Product Manager · London
               </div>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-navy-900 mb-8 leading-tight tracking-tight">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-navy-900 mb-8 leading-tight tracking-tight animate-fade-in">
                 I find the path forward when the constraint{' '}
                 <span className="italic">is</span> the job.
               </h1>
-              <p className="text-xl text-gray-700 mb-12 leading-relaxed max-w-4xl">
+              <p className="text-xl text-gray-700 mb-12 leading-relaxed max-w-4xl animate-fade-in-delay">
                 12 years shipping platform and API products across regulated ecosystems: telecom infrastructure, tax compliance, and financial communications. I deliver measurable outcomes in markets where regulatory ambiguity is the norm.
               </p>
+              <div className="inline-flex items-center gap-3 px-5 py-3 bg-blue-50 border border-blue-200 rounded-lg mb-8 animate-fade-in-delay-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-medium text-blue-900">Open to opportunities</span>
+                  <span className="text-xs text-blue-700 bg-blue-100 px-2 py-1 rounded">Product Leadership</span>
+                </div>
+              </div>
             </div>
 
             <div className="flex flex-col items-center lg:flex-shrink-0">
@@ -199,8 +205,11 @@ export default function Home({ onNavigate }: HomeProps) {
       <section id="selected-work" className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-navy-900 mb-3">Selected Work</h2>
-          <p className="text-lg text-gray-600 mb-12 max-w-3xl">
+          <p className="text-lg text-gray-600 mb-4 max-w-3xl">
             Four regulated products. Three industries. Measurable outcomes each time.
+          </p>
+          <p className="text-base text-gray-600 mb-12 max-w-3xl">
+            Each case study follows the same structure: the regulatory or ecosystem constraint that defined the problem space, the discovery process that identified the right abstraction layer, and the measurable outcome that followed.
           </p>
           <Accordion items={caseStudies} />
         </div>
@@ -230,11 +239,14 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-navy-900 mb-3">What others say</h2>
-          <p className="text-lg text-gray-600 mb-12">
-            Placeholder — replace with LinkedIn recommendations before publishing.
+          <p className="text-lg text-gray-600 mb-4">
+            Feedback from cross-functional partners and leadership across regulated product environments.
+          </p>
+          <p className="text-sm text-gray-500 mb-12">
+            Replace these placeholders with LinkedIn recommendations before publishing.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <TestimonialCard
@@ -250,6 +262,24 @@ export default function Home({ onNavigate }: HomeProps) {
               company="Company"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-navy-900">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">
+            Looking for a product leader who thrives in regulated complexity?
+          </h2>
+          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            I specialize in shipping platform and API products where regulatory ambiguity, vendor ecosystems, and delivery constraints intersect. If your product operates in a regulated environment and you need someone who can find the path forward, let's talk.
+          </p>
+          <button
+            onClick={() => onNavigate('contact')}
+            className="inline-flex items-center justify-center px-10 py-5 bg-white text-navy-900 font-semibold rounded-lg hover:bg-gray-100 transition-all text-lg shadow-lg hover:shadow-xl hover:scale-105 transform duration-200"
+          >
+            Get in Touch
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </button>
         </div>
       </section>
     </div>

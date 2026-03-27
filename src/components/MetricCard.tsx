@@ -12,8 +12,8 @@ export default function MetricCard({ value, label, size = 'lg' }: MetricCardProp
   };
 
   return (
-    <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
-      <div className={`${sizeClasses[size]} font-bold text-navy-900 mb-2`}>
+    <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-300 hover:scale-105 transform cursor-default group">
+      <div className={`${sizeClasses[size]} font-bold text-navy-900 mb-2 group-hover:text-blue-600 transition-colors duration-300`}>
         {value}
       </div>
       <div className="text-sm font-semibold text-gray-700 leading-tight">
