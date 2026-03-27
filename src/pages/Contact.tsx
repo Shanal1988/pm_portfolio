@@ -9,8 +9,8 @@ export default function Contact() {
             Let's Connect
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Open to connecting with teams building in Banking, Fintech, RegTech, CPaaS, UCaaS,
-            or Platform Infrastructure.
+            Senior or Staff PM roles at Wise, Revolut, Monzo, ComplyAdvantage, Ebury, Airwallex, or Stripe —
+            bringing infrastructure PM expertise to fintech payment and compliance platforms.
           </p>
         </div>
 
@@ -60,53 +60,56 @@ export default function Contact() {
         <div className="bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl p-8 md:p-12">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              What I'm Looking For
+              Target Opportunities
             </h2>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white rounded-lg p-6">
                 <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
                   <Briefcase className="w-5 h-5 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-gray-900 mb-2">Target Roles</h3>
+                <h3 className="font-bold text-gray-900 mb-2">Target Companies</h3>
                 <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• Senior Product Manager</li>
-                  <li>• Lead Product Manager</li>
-                  <li>• Group Product Manager</li>
-                  <li>• AI Product Manager</li>
+                  <li>• Wise (payments infrastructure)</li>
+                  <li>• Revolut (fintech platform)</li>
+                  <li>• Monzo (mobile banking)</li>
+                  <li>• ComplyAdvantage (compliance)</li>
+                  <li>• Ebury (FX & payments)</li>
+                  <li>• Airwallex (payments infra)</li>
+                  <li>• Stripe (payments platform)</li>
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-6">
                 <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
                   <MapPin className="w-5 h-5 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-gray-900 mb-2">Location & Work Style</h3>
+                <h3 className="font-bold text-gray-900 mb-2">Role Level & Location</h3>
                 <ul className="text-gray-700 space-y-1 text-sm">
+                  <li>• Senior Product Manager</li>
+                  <li>• Staff Product Manager</li>
                   <li>• Based in London, UK</li>
-                  <li>• Open to hybrid arrangements</li>
-                  <li>• Open to remote roles</li>
-                  <li>• UK & international opportunities</li>
+                  <li>• Open to hybrid/remote</li>
                 </ul>
               </div>
             </div>
 
             <div className="bg-white rounded-lg p-6 mb-8">
-              <h3 className="font-bold text-gray-900 mb-3">Industries & Domains of Interest</h3>
+              <h3 className="font-bold text-gray-900 mb-3">Focus Areas</h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  'Banking & Financial Services',
-                  'Fintech',
-                  'RegTech',
-                  'CPaaS & UCaaS',
-                  'Platform Infrastructure',
-                  'Enterprise SaaS',
-                  'AI/ML Products',
-                  'Cloud Infrastructure',
-                ].map((industry, index) => (
+                  'Payment Infrastructure',
+                  'API Orchestration',
+                  'Regulatory Workflows',
+                  'Multi-party Platforms',
+                  'Platform Activation',
+                  'Compliance Architecture',
+                  'Financial Infrastructure',
+                  'Fintech Scaling',
+                ].map((area, index) => (
                   <span
                     key={index}
                     className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-medium rounded-full"
                   >
-                    {industry}
+                    {area}
                   </span>
                 ))}
               </div>
@@ -114,10 +117,10 @@ export default function Contact() {
 
             <div className="text-center">
               <p className="text-gray-700 leading-relaxed mb-6">
-                I bring the ability to sit in a room with a vendor product manager, a compliance
-                officer, and an engineering lead, understand all three perspectives, and make a
-                product decision that works for everyone. If your team is building mission-critical
-                infrastructure where failure is not an option, let's talk.
+                I've spent 12 years solving infrastructure PM problems for the exact financial institutions
+                that fintech platforms serve. Multi-party API orchestration, regulatory complexity, vendor
+                negotiation, platform activation at scale. If you're building payment infrastructure or
+                compliance platforms where those are core product challenges, let's connect.
               </p>
               <a
                 href="https://www.linkedin.com/in/shanalagrawal"

@@ -68,27 +68,26 @@ export default function About() {
             </h1>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                I specialize in the "heavy lifting" of product management: building mission-critical
-                infrastructure where failure is not an option. I build products where regulatory
-                complexity intersects with user experience.
+                Most PMs treat regulatory complexity as a constraint to manage around. I treat it as
+                the product problem itself — because that's where the interesting work actually lives.
               </p>
               <p>
-                Most Product Managers see regulation as a blocker. I see it as a product problem to
-                solve. My career is defined by making complex ecosystems work: vendor orchestration,
-                regulatory navigation (FCA, SEC, A2P 10DLC, and UK tax law), and legacy modernization
-                to keep the user experience simple.
+                My background runs across three structurally similar but jurisdictionally distinct environments:
+                telecom infrastructure at BT/Openreach and Telstra, tax and accounting compliance SaaS at IRIS Software,
+                and financial communication compliance at Global Relay. Each required learning the regulatory constraints,
+                the vendor ecosystem, and the enterprise client needs fast — and shipping before the environment fully settled.
+                The pattern that repeats isn't domain expertise in any one area. It's a method for operating in regulated
+                markets where the path forward requires figuring out what's even possible before deciding what to build.
               </p>
               <p>
-                I have shipped platforms that grew from 30k to 80k users while keeping thousands of
-                financial firms compliant. At Global Relay, I own product strategy for a compliant
-                communication and archiving platform serving regulated financial institutions,
-                ensuring more than 2 million text messages per month are captured and audit-ready
-                for banks, broker-dealers, and wealth managers.
+                CPaaS aggregators and payment processors are structurally identical: multi-party API dependencies, regulated
+                enterprise clients, compliance frameworks that change faster than product cycles. The financial institutions
+                I've been building for at Global Relay are the same ones that Wise, Revolut, Monzo, and Ebury serve.
+                The domain is new. The architecture isn't.
               </p>
               <p>
-                What I bring: the ability to sit in a room with a vendor product manager, a compliance
-                officer, and an engineering lead, understand all three perspectives, and make a
-                product decision that works for everyone.
+                The roles that fit: Senior or Staff PM at fintech infrastructure, payments platforms, or compliance SaaS —
+                where the product problem involves API ecosystems, regulatory workflows, or activation at scale.
               </p>
             </div>
           </div>

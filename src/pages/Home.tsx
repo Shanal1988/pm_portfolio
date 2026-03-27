@@ -54,13 +54,14 @@ export default function Home({ onNavigate }: HomeProps) {
             the job.
           </h1>
           <p className="text-xl text-gray-600 mb-4 leading-relaxed max-w-2xl">
-            12 years shipping platform and infrastructure products in regulated ecosystems — financial
-            compliance, tax, and telecom — specialising in environments where vendor dependencies,
-            regulatory ambiguity, and delivery deadlines all land in the same sprint.
+            12 years shipping multi-party API platforms for regulated financial institutions across
+            three ecosystems: CPaaS, tax compliance, telecom infrastructure. Same architectural pattern.
+            Different jurisdictions.
           </p>
           <p className="text-lg text-gray-500 mb-10 max-w-2xl leading-relaxed">
-            Now directing that foundation toward AI-powered communication and platform products, where
-            infrastructure complexity is exactly what makes AI work reliably in regulated environments.
+            CPaaS aggregators orchestrate vendor APIs and regulated enterprise clients. Payment
+            processors do the same. The infrastructure thinking transfers directly. Now targeting
+            fintech roles where that platform foundation maps precisely to payment infrastructure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button
@@ -84,7 +85,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="py-12 px-4 sm:px-6 lg:px-8 border-y border-gray-100 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-6 text-center">
-            Products shipped at
+            Multi-party API platform clients
           </p>
           <div className="flex flex-wrap justify-center gap-x-12 gap-y-4">
             {companies.map((co) => (
@@ -102,7 +103,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="max-w-5xl mx-auto">
           <div className="mb-14">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Selected work</h2>
-            <p className="text-gray-500 text-lg">Three projects, three regulatory domains, measurable outcomes each time.</p>
+            <p className="text-gray-500 text-lg">Infrastructure thinking under constraint: vendor negotiation, regulatory ambiguity, multi-party platform design.</p>
           </div>
           <div className="space-y-6">
             {proofPoints.map((point, index) => (
@@ -138,39 +139,38 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                What makes this background unusual
+                The infrastructure pattern that transfers to fintech
               </h2>
               <div className="space-y-5 text-gray-700 leading-relaxed">
                 <p>
-                  Most PMs see regulatory complexity as a constraint to work around. I treat it as
-                  the product problem itself. The interesting work is always at the intersection of
-                  a compliance gap, a vendor API limitation, and a delivery deadline.
+                  CPaaS aggregators orchestrate vendor APIs, regulatory constraints, and regulated enterprise clients.
+                  Payment processors do exactly the same. The financial institutions I've served at Global Relay
+                  are the same clients that Wise, Revolut, Monzo, and Ebury serve today.
                 </p>
                 <p>
-                  Three regulated industries in 12 years — telecom infrastructure, tax compliance,
-                  financial communications — each requiring full domain fluency before shipping.
-                  The pattern that emerges isn't specialisation in one domain. It's a repeatable
-                  ability to master constrained environments at speed.
+                  This isn't a career pivot. It's applying infrastructure PM thinking to a new domain. The pattern
+                  repeats: vendor negotiation, multi-party API design, shipping through regulatory ambiguity,
+                  prioritization under constraint.
                 </p>
                 <p>
-                  The next application is AI-powered products in regulated environments, where the
-                  infrastructure depth matters more than it ever has.
+                  Telecom infrastructure, tax SaaS, financial communications compliance — all teaching the
+                  same lesson. The domain changes. The architecture doesn't.
                 </p>
               </div>
             </div>
             <div className="space-y-4">
               {[
                 {
-                  label: 'Vendor negotiation as a product capability',
-                  detail: 'Negotiated API capabilities directly with Twilio\'s product team. Defined integration requirements that Sky, Vodafone, and BT Retail all consumed.',
+                  label: 'Vendor orchestration as platform architecture',
+                  detail: 'Twilio, BT/Openreach partners, HMRC integrations. Understanding vendor constraints and turning them into product decisions — exactly how payment networks work.',
                 },
                 {
-                  label: 'Shipping through regulatory ambiguity',
-                  detail: 'Built configurable architecture that absorbed multiple A2P 10DLC regulatory outcomes simultaneously — rather than waiting for the framework to settle.',
+                  label: 'Multi-party API design that scales',
+                  detail: 'Three partners, competing requirements, one platform. Same thinking applies to payment processor networks: merchants, banks, fintech platforms on one infrastructure.',
                 },
                 {
-                  label: 'Regulated domain mastery at speed',
-                  detail: 'Telecom infrastructure, HMRC tax law, FCA/SEC financial compliance. Meaningful product outcomes in under a year each time.',
+                  label: 'Shipping through regulatory transition',
+                  detail: 'A2P 10DLC, HMRC requirements, FCA/SEC enforcement waves. Built product that absorbs regulatory change without breaking. Core fintech skill.',
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white border border-gray-200 rounded-lg p-5">
@@ -187,17 +187,17 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-5">
-            Open to the right role
+            Targeting fintech infrastructure
           </h2>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Looking for Senior PM roles at CPaaS platforms, compliance infrastructure companies,
-            and growth-stage fintechs where regulated environments are a core product constraint —
-            not an edge case. Hybrid, London-based. Visa sponsorship required or £150k+ base.
+            Senior or Staff PM roles at Wise, Revolut, Monzo, ComplyAdvantage, Ebury, Airwallex, or Stripe —
+            where product problems involve payment networks, API orchestration, regulatory workflows, or platform
+            activation at scale. Infrastructure PM with a financial institutions client base seeking the next domain.
           </p>
           <p className="text-gray-500 mb-10 leading-relaxed">
-            If you're building products where vendor dependencies, regulatory frameworks, and
-            engineering constraints all collide — that's the environment I work best in. Happy
-            to walk through any of the case studies in detail.
+            The financial compliance problems I solved at Global Relay are identical to those fintech platforms solve daily.
+            Vendor dependencies, regulatory frameworks, multi-party requirements. Same architecture. Bringing that foundation
+            to payment infrastructure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button
