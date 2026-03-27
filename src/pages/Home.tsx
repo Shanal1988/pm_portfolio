@@ -151,14 +151,11 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-8">
             Products shipped at
           </div>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap md:flex-nowrap gap-x-8 gap-y-6 md:gap-12">
             {companies.map((company, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 rounded-lg px-6 py-4 hover:border-gray-300 transition-colors"
-              >
-                <div className="text-base font-semibold text-navy-900">{company.name}</div>
-                <div className="text-xs text-gray-600 mt-1">{company.domain}</div>
+              <div key={index} className="flex-shrink-0">
+                <div className="text-base font-medium text-navy-900">{company.name}</div>
+                <div className="text-sm text-gray-500 mt-1">{company.domain}</div>
               </div>
             ))}
           </div>
