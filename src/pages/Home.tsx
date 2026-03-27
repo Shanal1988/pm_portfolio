@@ -126,10 +126,13 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
 
             <div className="flex flex-col items-center lg:flex-shrink-0">
-              <div className="w-[180px] h-[180px] rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center">
-                <span className="text-sm text-gray-400">Photo</span>
+              <div className="w-[180px] h-[180px] rounded-full border-4 border-gray-200 overflow-hidden shadow-lg">
+                <img
+                  src="/Gemini_Generated_Image_s3uo32s3uo32s3uo.png"
+                  alt="Shanal Agrawal"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <p className="text-xs text-gray-400 mt-3">Headshot placeholder</p>
             </div>
           </div>
 
