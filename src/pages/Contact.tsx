@@ -61,8 +61,8 @@ export default function Contact() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               Areas of Interest
             </h2>
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-white rounded-lg p-6">
+            <div className="flex justify-center mb-8">
+              <div className="bg-white rounded-lg p-6 max-w-md w-full">
                 <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
                   <Briefcase className="w-5 h-5 text-blue-600" />
                 </div>
@@ -74,18 +74,6 @@ export default function Contact() {
                   <li>• Compliance Platforms</li>
                   <li>• Enterprise SaaS</li>
                   <li>• B2B Platforms</li>
-                </ul>
-              </div>
-              <div className="bg-white rounded-lg p-6">
-                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
-                  <MapPin className="w-5 h-5 text-blue-600" />
-                </div>
-                <h3 className="font-bold text-gray-900 mb-2">Location & Role</h3>
-                <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• Based in London, UK</li>
-                  <li>• Product Leadership roles</li>
-                  <li>• Senior / Staff PM level</li>
-                  <li>• Hybrid & remote friendly</li>
                 </ul>
               </div>
             </div>
