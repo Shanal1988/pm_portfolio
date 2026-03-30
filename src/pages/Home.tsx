@@ -124,7 +124,7 @@ export default function Home({ onNavigate }: HomeProps) {
                   I build platform products where the constraint is never just one thing. Regulatory frameworks, vendor ecosystems, and enterprise delivery deadlines arrive together.
                 </p>
                 <p>
-                  Across financial services, tax compliance, and telecom infrastructure, I've shipped products where the path forward required figuring out what was even architecturally possible before deciding what to build. My background is infrastructure-deep across regulated markets, and that is exactly what a fintech platform problems require.
+                  Across financial communications, tax compliance, and telecom infrastructure, I've shipped products where the path forward required figuring out what was even architecturally possible before deciding what to build. My background is infrastructure-deep across regulated markets, and that is exactly what fintech platform problems require.
                 </p>
               </div>
             </div>
@@ -140,26 +140,22 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 mb-12 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+            <div className="text-center py-4 md:py-0 first:pt-0 last:pb-0 md:px-8 first:md:pl-0 last:md:pr-0">
               <div className="text-5xl font-bold text-navy-900 mb-2">167%</div>
-              <div className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Growth</div>
-              <div className="text-xs text-gray-600 mt-2">Global Relay, 24 months</div>
+              <div className="text-sm text-gray-600">Paid seat growth</div>
             </div>
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
+            <div className="text-center py-4 md:py-0 md:px-8">
               <div className="text-5xl font-bold text-navy-900 mb-2">2x</div>
-              <div className="text-sm font-semibold text-gray-700 uppercase tracking-wide">ARR growth</div>
-              <div className="text-xs text-gray-600 mt-2">Compliance platform pivot</div>
+              <div className="text-sm text-gray-600">ARR growth</div>
             </div>
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
-              <div className="text-5xl font-bold text-navy-900 mb-2">49%</div>
-              <div className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Workflow reduction</div>
-              <div className="text-xs text-gray-600 mt-2">33 to 17 minutes, IRIS</div>
-            </div>
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-navy-900 hover:shadow-lg transition-all duration-200">
+            <div className="text-center py-4 md:py-0 md:px-8">
               <div className="text-5xl font-bold text-navy-900 mb-2">20%</div>
-              <div className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Faster delivery</div>
-              <div className="text-xs text-gray-600 mt-2">Multi-party API platform</div>
+              <div className="text-sm text-gray-600">Faster partner delivery</div>
+            </div>
+            <div className="text-center py-4 md:py-0 md:px-8">
+              <div className="text-5xl font-bold text-navy-900 mb-2">12%</div>
+              <div className="text-sm text-gray-600">MAU growth post-launch</div>
             </div>
           </div>
 
