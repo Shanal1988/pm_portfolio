@@ -119,9 +119,14 @@ export default function Home({ onNavigate }: HomeProps) {
                 I find the path forward when the constraint{' '}
                 <span className="italic">is</span> the job.
               </h1>
-              <p className="text-xl text-gray-700 mb-12 leading-relaxed max-w-4xl animate-fade-in-delay">
-                12 years shipping platform and API products across regulated ecosystems: telecom infrastructure, tax compliance, and financial communications. I deliver measurable outcomes in markets where regulatory ambiguity is the norm.
-              </p>
+              <div className="text-xl text-gray-700 mb-12 leading-relaxed max-w-4xl animate-fade-in-delay space-y-6">
+                <p>
+                  I build platform products where the constraint is never just one thing. Regulatory frameworks, vendor ecosystems, and enterprise delivery deadlines arrive together.
+                </p>
+                <p>
+                  Across financial services, tax compliance, and telecom infrastructure, I've shipped products where the path forward required figuring out what was even architecturally possible before deciding what to build. My background is infrastructure-deep across regulated markets, and that is exactly what a fintech platform problems require.
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-col items-center lg:flex-shrink-0">
