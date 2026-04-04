@@ -5,7 +5,6 @@ import CaseStudies from './pages/CaseStudies';
 import CaseStudyGlobalRelay from './pages/CaseStudyGlobalRelay';
 import CaseStudyIris from './pages/CaseStudyIris';
 import CaseStudyOpenreach from './pages/CaseStudyOpenreach';
-import CaseStudyGlobalRelayOnboarding from './pages/CaseStudyGlobalRelayOnboarding';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
@@ -32,8 +31,6 @@ function App() {
         return <CaseStudyIris onNavigate={handleNavigate} />;
       case 'case-study-openreach':
         return <CaseStudyOpenreach onNavigate={handleNavigate} />;
-      case 'case-study-global-relay-onboarding':
-        return <CaseStudyGlobalRelayOnboarding onNavigate={handleNavigate} />;
       case 'about':
         return <About />;
       case 'contact':

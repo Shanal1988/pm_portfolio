@@ -14,32 +14,15 @@ export default function Home({ onNavigate }: HomeProps) {
       outcomeTags: ['167% growth', 'Doubled ARR', '24 months'],
       title: 'The Compliance Pivot',
       navigateTo: 'case-study-global-relay',
-      hook: 'Steered the product away from competing on UC features toward federated channel compliance — ahead of the SEC and FCA off-channel enforcement wave.',
+      hook: 'A collaborative strategic reframing that moved the product toward secure multi-party messaging with full compliance archiving — ahead of the SEC and FCA off-channel enforcement wave.',
       sections: {
-        context: 'Enterprise communication platform serving 1,000+ regulated financial institution clients. The product was positioned against Teams and Zoom on UC features — a race it structurally could not win.',
-        why: 'SEC and FCA off-channel enforcement was creating direct regulatory exposure for clients. Compliance archiving was underserved. Competing on video conferencing features was the wrong direction.',
-        discovery: 'Client conversations with compliance officers and IT administrators revealed the pain was regulatory exposure, not feature gaps. Competitive analysis showed no CPaaS provider had built configurable multi-channel compliance archiving at enterprise scale.',
-        solution: 'Federated channel compliance architecture — configurable to absorb multiple A2P regulatory outcomes simultaneously rather than hardcoding against a framework still in flux.',
-        execution: 'Negotiated API capability requirements directly with Twilio\'s product team. Aligned a sceptical commercial team. Shipped through live regulatory ambiguity — A2P framework changed multiple times during delivery.',
-        impact: '167% growth, doubled ARR over 24 months.',
-        learnings: 'Designing for regulatory ambiguity requires configurable architecture. Shipping before the framework settles is a competitive advantage if you build the right abstraction layer.',
-      },
-    },
-    {
-      company: 'Global Relay',
-      typeTag: 'Activation & Growth',
-      outcomeTags: ['~70% → ~85% completion', '12% MAU growth'],
-      title: 'Onboarding Redesign',
-      navigateTo: 'case-study-global-relay-onboarding',
-      hook: 'Funnel analysis identified mid-flow abandonment as the primary activation blocker — not the step everyone assumed.',
-      sections: {
-        context: 'Enterprise SaaS onboarding for regulated financial institution clients. Activation was below target and the cause was unclear.',
-        why: 'MAU growth was flat despite healthy top-of-funnel. Onboarding was the likely bottleneck but no one had mapped where users were actually dropping.',
-        discovery: 'Funnel analysis identified mid-flow abandonment as the primary drop-off point — not the steps most stakeholders assumed were causing friction.',
-        solution: 'Simplified activation touchpoints across the onboarding flow. Removed steps that added friction without adding trust or compliance value.',
-        execution: 'Cross-functional delivery with Engineering, UX, and Marketing. Staged rollout with measurement gates at each phase.',
-        impact: 'Onboarding completion improved from ~70% to ~85%. 12% MAU growth post-launch.',
-        learnings: 'Enterprise onboarding friction is often invisible until you map the funnel at step level. The drop-off point is almost never where stakeholders assume it is.',
+        context: 'Global Relay\'s enterprise communication platform served 1,000+ regulated financial institution clients. The archiving perimeter needed to expand as communication channels proliferated. Clients were using channels outside the firm\'s supervised perimeter, creating growing regulatory exposure.',
+        why: 'Multi-party messaging across channels fell outside supervised archiving perimeters. SEC and FCA off-channel enforcement was accelerating. Firms were being fined for communication outside their compliance perimeter. The product needed to enable secure multi-party messaging while ensuring every conversation was captured and available for regulatory discovery.',
+        discovery: 'Structured conversations with compliance officers revealed the pain was regulatory exposure, not missing features. They needed to answer whether every conversation was captured, searchable, and producible on regulatory request. Competitive analysis confirmed no CPaaS provider had built configurable multi-channel compliance archiving at enterprise scale.',
+        solution: 'Multi-party messaging built directly into the platform with compliance from the start. Users could initiate group conversations across channels with full capture of content, media, and metadata. Vendor API negotiation with our primary vendor partner was critical — their API lacked native support at the level required. Result was a configurable compliance layer across the channel mix each client needed to supervise.',
+        execution: 'Cross-functional delivery across engineering, legal, and finance. Vendor API negotiation was a partnership conversation presenting mutual commercial benefit. The hardest constraint was timing — vendor APIs were not yet GA, creating dependency on their release date. A2P regulatory landscape shifted mid-build; configurable architecture absorbed the change without core redesign.',
+        impact: '167% paid seat growth and 2× ARR over 24 months. Growth driven by solving regulatory exposure financial institutions could not leave unaddressed. Multi-party messaging with full compliance archiving became the primary commercial differentiator.',
+        learnings: 'Qualify vendor API readiness earlier — the dependency on our primary vendor partner\'s timeline introduced delivery risk. In regulated product work, architecture needs configurability from the start. Building for multiple potential outcomes was the right call. This pattern applies directly to AI product work in regulated environments.',
       },
     },
     {
@@ -204,7 +187,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-navy-900 mb-3">Selected Work</h2>
           <p className="text-lg text-gray-600 mb-4 max-w-3xl">
-            Four regulated products. Three industries. Measurable outcomes each time.
+            Three regulated products. Three industries. Measurable outcomes each time.
           </p>
           <p className="text-base text-gray-600 mb-12 max-w-3xl">
             Each case study follows the same structure: the regulatory or ecosystem constraint that defined the problem space, the discovery process that identified the right abstraction layer, and the measurable outcome that followed.
