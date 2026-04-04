@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 
 interface AccordionItem {
   company: string;
@@ -7,6 +7,7 @@ interface AccordionItem {
   outcomeTags: string[];
   title: string;
   hook: string;
+  navigateTo?: string;
   sections: {
     context: string;
     why: string;
@@ -20,9 +21,10 @@ interface AccordionItem {
 
 interface AccordionProps {
   items: AccordionItem[];
+  onNavigate?: (page: string) => void;
 }
 
-export default function Accordion({ items }: AccordionProps) {
+export default function Accordion({ items, onNavigate }: AccordionProps) {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const toggleAccordion = (index: number) => {
@@ -123,6 +125,18 @@ export default function Accordion({ items }: AccordionProps) {
                 </h4>
                 <p className="text-base text-gray-800 leading-relaxed">{item.sections.learnings}</p>
               </div>
+
+              {item.navigateTo && onNavigate && (
+                <div className="pt-4 border-t border-gray-200">
+                  <button
+                    onClick={() => onNavigate(item.navigateTo!)}
+                    className="group/link inline-flex items-center text-navy-900 font-semibold hover:text-blue-600 transition-colors"
+                  >
+                    Read full case study
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </div>

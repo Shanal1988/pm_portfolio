@@ -57,6 +57,22 @@ export default function CaseStudies({ onNavigate }: CaseStudiesProps) {
       ],
       tags: ['Telecom Infrastructure', 'API Integration', 'Enterprise Scale', 'B2B'],
     },
+    {
+      id: 'global-relay-onboarding',
+      title: 'Onboarding Redesign That Drove 12% MAU Growth',
+      company: 'Global Relay',
+      role: 'Senior Product Manager',
+      duration: 'Aug 2025 - Present',
+      summary: 'Funnel analysis identified mid-flow abandonment as the primary activation blocker — not the step everyone assumed',
+      image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      metrics: [
+        { label: 'Completion Rate', value: '~70% → ~85%' },
+        { label: 'MAU Growth Post-Launch', value: '12%' },
+        { label: 'Primary Blocker', value: 'Mid-flow' },
+        { label: 'Compliance Incidents', value: '0' },
+      ],
+      tags: ['Activation', 'Growth', 'Enterprise SaaS', 'Financial Services'],
+    },
   ];
 
   return (

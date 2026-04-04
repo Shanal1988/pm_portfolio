@@ -13,6 +13,7 @@ export default function Home({ onNavigate }: HomeProps) {
       typeTag: 'Platform Strategy',
       outcomeTags: ['167% growth', 'Doubled ARR', '24 months'],
       title: 'The Compliance Pivot',
+      navigateTo: 'case-study-global-relay',
       hook: 'Steered the product away from competing on UC features toward federated channel compliance — ahead of the SEC and FCA off-channel enforcement wave.',
       sections: {
         context: 'Enterprise communication platform serving 1,000+ regulated financial institution clients. The product was positioned against Teams and Zoom on UC features — a race it structurally could not win.',
@@ -29,6 +30,7 @@ export default function Home({ onNavigate }: HomeProps) {
       typeTag: 'Activation & Growth',
       outcomeTags: ['~70% → ~85% completion', '12% MAU growth'],
       title: 'Onboarding Redesign',
+      navigateTo: 'case-study-global-relay-onboarding',
       hook: 'Funnel analysis identified mid-flow abandonment as the primary activation blocker — not the step everyone assumed.',
       sections: {
         context: 'Enterprise SaaS onboarding for regulated financial institution clients. Activation was below target and the cause was unclear.',
@@ -45,6 +47,7 @@ export default function Home({ onNavigate }: HomeProps) {
       typeTag: 'Regulated Migration',
       outcomeTags: ['49% faster workflow', '1,500 beta users', '8 months'],
       title: 'Making Tax Digital — Desktop to Cloud',
+      navigateTo: 'case-study-iris-element',
       hook: 'Led the migration of a locally-installed tax filing platform to cloud under a live HMRC regulatory deadline — shipped on schedule to 1,500 beta users in 8 months.',
       sections: {
         context: 'IRIS Element was a locally-installed desktop application used by 10,000+ UK accountants and tax professionals for individual and business tax filing. The product had no cloud presence and no omnichannel capability at a moment when HMRC\'s Making Tax Digital initiative was fundamentally changing how tax data could be submitted, stored, and accessed.',
@@ -61,6 +64,7 @@ export default function Home({ onNavigate }: HomeProps) {
       typeTag: 'API Platform',
       outcomeTags: ['20% faster delivery', '15% SLA cost reduction'],
       title: 'Multi-Partner API Platform',
+      navigateTo: 'case-study-openreach',
       hook: 'Translated three sets of competing integration requirements from Sky, Vodafone, and BT Retail into a single coherent platform all three could adopt without bespoke builds.',
       sections: {
         context: 'BT/Openreach B2B partner platform serving Sky, Vodafone, and BT Retail as simultaneous integration partners. Each had distinct SLA requirements and integration preferences.',
@@ -205,7 +209,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <p className="text-base text-gray-600 mb-12 max-w-3xl">
             Each case study follows the same structure: the regulatory or ecosystem constraint that defined the problem space, the discovery process that identified the right abstraction layer, and the measurable outcome that followed.
           </p>
-          <Accordion items={caseStudies} />
+          <Accordion items={caseStudies} onNavigate={onNavigate} />
         </div>
       </section>
 
