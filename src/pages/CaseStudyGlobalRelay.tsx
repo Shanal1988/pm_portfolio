@@ -150,8 +150,8 @@ export default function CaseStudyGlobalRelay({ onNavigate }: CaseStudyGlobalRela
             {[
               { value: '167%', detail: 'Paid seat growth' },
               { value: '2×', detail: 'ARR growth over 24 months' },
+              { value: '24 months', detail: 'Delivery window' },
               { value: '1,000+', detail: 'Regulated clients served' },
-              { value: '0', detail: 'Compliance disruptions during transition' },
             ].map((m) => (
               <div key={m.value} className="bg-slate-50 rounded-lg p-4 border border-slate-100">
                 <div className="text-2xl font-bold text-gray-900 mb-1">{m.value}</div>
@@ -179,9 +179,6 @@ export default function CaseStudyGlobalRelay({ onNavigate }: CaseStudyGlobalRela
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             The broader learning: in regulated product work, the architecture needs to be built for configurability from the start. The A2P regulatory shift mid-build validated that decision. Waiting for regulatory certainty before committing to an architecture would have cost time and created rework. Building for multiple potential outcomes was the right call.
-          </p>
-          <p className="text-gray-700 leading-relaxed">
-            This pattern is directly applicable to AI product work in regulated environments. AI governance frameworks, data residency requirements, and model explainability standards are all still being written. The same approach — map the most likely scenarios, build for configurability, ship through ambiguity — is the right posture.
           </p>
         </section>
 
