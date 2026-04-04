@@ -11,18 +11,18 @@ export default function Home({ onNavigate }: HomeProps) {
     {
       company: 'Global Relay',
       typeTag: 'Platform Strategy',
-      outcomeTags: ['167% growth', 'Doubled ARR', '24 months'],
+      outcomeTags: ['167% growth', '2x ARR growth', '24 months'],
       title: 'The Compliance Pivot',
       navigateTo: 'case-study-global-relay',
-      hook: 'A collaborative strategic reframing that moved the product toward secure multi-party messaging with full compliance archiving — ahead of the SEC and FCA off-channel enforcement wave.',
+      hook: 'A collaborative strategic reframing that moved the product toward secure multi-party messaging with full compliance archiving, ahead of the SEC and FCA off-channel enforcement wave.',
       sections: {
         context: 'Global Relay\'s enterprise communication platform served 1,000+ regulated financial institution clients. The archiving perimeter needed to expand as communication channels proliferated. Clients were using channels outside the firm\'s supervised perimeter, creating growing regulatory exposure.',
         why: 'Multi-party messaging across channels fell outside supervised archiving perimeters. SEC and FCA off-channel enforcement was accelerating. Firms were being fined for communication outside their compliance perimeter. The product needed to enable secure multi-party messaging while ensuring every conversation was captured and available for regulatory discovery.',
         discovery: 'Structured conversations with compliance officers revealed the pain was regulatory exposure, not missing features. They needed to answer whether every conversation was captured, searchable, and producible on regulatory request. Competitive analysis confirmed no CPaaS provider had built configurable multi-channel compliance archiving at enterprise scale.',
         solution: 'Multi-party messaging built directly into the platform with compliance from the start. Users could initiate group conversations across channels with full capture of content, media, and metadata. Vendor API negotiation with our primary vendor partner was critical — their API lacked native support at the level required. Result was a configurable compliance layer across the channel mix each client needed to supervise.',
-        execution: 'Cross-functional delivery across engineering, legal, and finance. Vendor API negotiation was a partnership conversation presenting mutual commercial benefit. The hardest constraint was timing — vendor APIs were not yet GA, creating dependency on their release date. A2P regulatory landscape shifted mid-build; configurable architecture absorbed the change without core redesign.',
+        execution: 'The cross-functional delivery involved engineering, legal, and finance. The vendor API negotiation was a partnership conversation presenting mutual commercial benefit to our primary vendor partner\'s product team. The commercial team had concerns about deprioritising existing commitments; the case was made on projected volume uplift and the size of the compliance gap in the market. The hardest constraint was timing. The vendor APIs were not yet generally available, which created a direct dependency on their GA release date before we could ship to clients. The A2P regulatory landscape also shifted mid-build; the configurable architecture absorbed the change without requiring a core redesign.',
         impact: '167% paid seat growth and 2× ARR over 24 months. Growth driven by solving regulatory exposure financial institutions could not leave unaddressed. Multi-party messaging with full compliance archiving became the primary commercial differentiator.',
-        learnings: 'Qualify vendor API readiness earlier — the dependency on our primary vendor partner\'s timeline introduced delivery risk. In regulated product work, architecture needs configurability from the start. Building for multiple potential outcomes was the right call. This pattern applies directly to AI product work in regulated environments.',
+        learnings: 'Qualify vendor API readiness earlier — the dependency on our primary vendor partner\'s timeline introduced delivery risk. In regulated product work, architecture needs configurability from the start. Building for multiple potential outcomes was the right call.',
       },
     },
     {
