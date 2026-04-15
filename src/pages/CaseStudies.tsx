@@ -18,8 +18,8 @@ export default function CaseStudies({ onNavigate }: CaseStudiesProps) {
       summary: 'Led cross-functional initiative to ship the platform\'s #1 requested feature while navigating evolving A2P 10DLC regulations',
       image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1200',
       metrics: [
-        { label: 'Paid Seat Growth', value: 'Significant' },
-        { label: 'ARR Growth', value: 'Strong YoY' },
+        { label: 'Paid Seat Growth', value: '167%' },
+        { label: 'ARR Growth', value: '2×' },
         { label: 'Delivery Window', value: '24 months' },
         { label: 'Regulated Clients Served', value: '1,000+' },
       ],

@@ -31,8 +31,8 @@ export default function CaseStudyGlobalRelay({ onNavigate }: CaseStudyGlobalRela
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16 p-6 bg-slate-50 rounded-xl border border-slate-100">
           {[
-            { value: 'Significant', label: 'Paid seat growth' },
-            { value: 'Strong YoY', label: 'ARR growth' },
+            { value: '167%', label: 'Paid seat growth' },
+            { value: '2×', label: 'ARR growth' },
             { value: '24 months', label: 'Delivery window' },
             { value: '1,000+', label: 'Regulated clients served' },
           ].map((m) => (
@@ -148,8 +148,8 @@ export default function CaseStudyGlobalRelay({ onNavigate }: CaseStudyGlobalRela
           </h3>
           <div className="grid grid-cols-2 gap-4 mb-6">
             {[
-              { value: 'Significant', detail: 'Paid seat growth' },
-              { value: 'Strong YoY', detail: 'ARR growth over 24 months' },
+              { value: '167%', detail: 'Paid seat growth' },
+              { value: '2×', detail: 'ARR growth over 24 months' },
               { value: '24 months', detail: 'Delivery window' },
               { value: '1,000+', detail: 'Regulated clients served' },
             ].map((m) => (
@@ -160,7 +160,7 @@ export default function CaseStudyGlobalRelay({ onNavigate }: CaseStudyGlobalRela
             ))}
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Significant growth in paid seats and strong ARR performance over 24 months. The growth was not driven by winning feature comparisons. It was driven by being the platform that solved the regulatory exposure problem financial institutions could not leave unaddressed.
+            167% growth in paid seats and doubled ARR over 24 months. The growth was not driven by winning feature comparisons. It was driven by being the platform that solved the regulatory exposure problem financial institutions could not leave unaddressed.
           </p>
           <p className="text-gray-700 leading-relaxed">
             The multi-party messaging feature with full compliance archiving became the primary commercial differentiator. The configurable architecture that absorbed regulatory framework changes without client disruption became the technical proof point that the product had been built for regulatory ambiguity, not around a single point-in-time interpretation of it.
