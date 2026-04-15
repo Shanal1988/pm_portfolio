@@ -32,7 +32,7 @@ function App() {
       case 'case-study-openreach':
         return <CaseStudyOpenreach onNavigate={handleNavigate} />;
       case 'about':
-        return <About />;
+        return <About onNavigate={handleNavigate} />;
       case 'contact':
         return <Contact />;
       default:

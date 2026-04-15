@@ -120,7 +120,8 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="w-[180px] h-[180px] rounded-full border-4 border-gray-200 overflow-hidden shadow-lg">
                 <img
                   src="/Gemini_Generated_Image_s3uo32s3uo32s3uo.png"
-                  alt="Shanal Agrawal"
+                  alt="Shanal Agrawal, Senior Product Manager"
+                  loading="eager"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -146,13 +147,14 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-2">
             <button
               onClick={() => {
                 const selectedWorkSection = document.getElementById('selected-work');
                 selectedWorkSection?.scrollIntoView({ behavior: 'smooth' });
               }}
               className="group inline-flex items-center justify-center px-8 py-4 bg-navy-900 text-white font-semibold rounded-lg hover:bg-navy-800 transition-all"
+              aria-label="Scroll to selected work section"
             >
               See My Work
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -160,6 +162,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <button
               onClick={() => onNavigate('contact')}
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-navy-900 font-semibold rounded-lg border border-gray-200 hover:border-navy-900 transition-all"
+              aria-label="Navigate to contact page"
             >
               Get in Touch
             </button>
@@ -224,7 +227,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-navy-900 mb-3">What colleagues say</h2>
           <p className="text-lg text-gray-600 mb-12 max-w-3xl">
-            What people I've worked with have to say.
+            LinkedIn recommendations from people I've shipped products with.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-navy-900 hover:shadow-lg transition-all duration-200 flex flex-col">
