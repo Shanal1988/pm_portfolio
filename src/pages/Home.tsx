@@ -1,4 +1,4 @@
-import { ArrowRight, Building2, Target, Layers, TrendingUp } from 'lucide-react';
+import { ArrowRight, Building2, Target, Layers, TrendingUp, Quote } from 'lucide-react';
 import MetricCard from '../components/MetricCard';
 import Accordion from '../components/Accordion';
 
@@ -216,6 +216,39 @@ export default function Home({ onNavigate }: HomeProps) {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-navy-900 mb-3">What colleagues say</h2>
+          <p className="text-lg text-gray-600 mb-12 max-w-3xl">
+            Recommendations from teammates at Global Relay.
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-navy-900 hover:shadow-lg transition-all duration-200 flex flex-col">
+              <Quote className="w-8 h-8 text-navy-900 mb-6 flex-shrink-0" />
+              <p className="text-base text-gray-700 leading-relaxed mb-8 flex-1">
+                I've been working with Shanal Agrawal at Global Relay for the past 3 years as an SDET in the same team, and he's been a strong Senior Product Manager to work with. He does a great job driving end-to-end execution across backend systems that require coordination between multiple engineering teams, UI dependencies, and external partners. What stands out is his ability to quickly break down ambiguity, identify risks early, and align all stakeholders so delivery stays on track. He is calm under pressure, easy to work with, and brings a strong sense of ownership to everything he drives.
+              </p>
+              <div className="border-t border-gray-100 pt-6">
+                <div className="text-sm font-semibold text-navy-900">Muhamamd Maaz Khalid</div>
+                <div className="text-sm text-gray-600">SDET, Global Relay</div>
+                <div className="text-xs text-gray-400 mt-1">April 2026</div>
+              </div>
+            </div>
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-navy-900 hover:shadow-lg transition-all duration-200 flex flex-col">
+              <Quote className="w-8 h-8 text-navy-900 mb-6 flex-shrink-0" />
+              <p className="text-base text-gray-700 leading-relaxed mb-8 flex-1">
+                Shanal is a powerhouse Technical Product Manager who consistently turns complex requirements into actionable roadmaps. I've worked closely with him as he spearheaded the gathering and refining of feature requirements, ensuring total clarity for the engineering team. Beyond his technical acumen, Shanal's foresight is a massive asset; he stayed ahead of every 3rd-party provider update, allowing us to anticipate shifts and plan well in advance. His focus on team performance and his commitment to on-time delivery make him a vital asset to any product organization.
+              </p>
+              <div className="border-t border-gray-100 pt-6">
+                <div className="text-sm font-semibold text-navy-900">Abdelbacet Hachani</div>
+                <div className="text-sm text-gray-600">Lead, Software Development, Global Relay</div>
+                <div className="text-xs text-gray-400 mt-1">April 2026</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
