@@ -224,7 +224,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-navy-900 mb-3">What colleagues say</h2>
           <p className="text-lg text-gray-600 mb-12 max-w-3xl">
-            Recommendations from teammates at Global Relay.
+            What people I've worked with have to say.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-navy-900 hover:shadow-lg transition-all duration-200 flex flex-col">
