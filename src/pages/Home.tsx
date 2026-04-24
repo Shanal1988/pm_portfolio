@@ -85,60 +85,11 @@ export default function Home({ onNavigate }: HomeProps) {
   ];
 
   const companies = [
-    {
-      name: 'Global Relay',
-      domain: 'Financial Compliance & Archiving',
-      logo: (
-        <img src="/Untitled-design-5.webp" alt="Global Relay" className="h-7 w-auto" />
-      ),
-    },
-    {
-      name: 'IRIS Software',
-      domain: 'Tax & Accounting SaaS',
-      logo: (
-        <svg viewBox="0 0 120 32" className="h-7 w-auto" aria-hidden="true">
-          <circle cx="16" cy="16" r="10" fill="#00205b" />
-          <circle cx="16" cy="16" r="4" fill="white" />
-          <circle cx="16" cy="16" r="2" fill="#00205b" />
-          <text x="32" y="21" fontFamily="system-ui, -apple-system, sans-serif" fontSize="15" fontWeight="800" fill="#00205b" letterSpacing="0.08em">IRIS</text>
-        </svg>
-      ),
-    },
-    {
-      name: 'BT / Openreach',
-      domain: 'Telecom Infrastructure',
-      logo: (
-        <svg viewBox="0 0 180 32" className="h-7 w-auto" aria-hidden="true">
-          <circle cx="16" cy="16" r="13" fill="#5514b4" />
-          <text x="10" y="22" fontFamily="system-ui, -apple-system, sans-serif" fontSize="16" fontWeight="800" fill="white">BT</text>
-          <line x1="38" y1="6" x2="38" y2="26" stroke="#d1d5db" strokeWidth="1" />
-          <text x="46" y="21" fontFamily="system-ui, -apple-system, sans-serif" fontSize="13" fontWeight="700" fill="#1d2939" letterSpacing="-0.01em">Openreach</text>
-        </svg>
-      ),
-    },
-    {
-      name: 'Telstra',
-      domain: 'Broadband & Provisioning',
-      logo: (
-        <svg viewBox="0 0 110 32" className="h-7 w-auto" aria-hidden="true">
-          <rect x="2" y="8" width="6" height="16" rx="1" fill="#0d54ff" />
-          <rect x="10" y="4" width="6" height="24" rx="1" fill="#0d54ff" opacity="0.7" />
-          <rect x="18" y="10" width="6" height="12" rx="1" fill="#0d54ff" opacity="0.4" />
-          <text x="30" y="22" fontFamily="system-ui, -apple-system, sans-serif" fontSize="15" fontWeight="700" fill="#0d1b3e" letterSpacing="-0.02em">Telstra</text>
-        </svg>
-      ),
-    },
-    {
-      name: 'Infosys',
-      domain: 'Enterprise Consulting',
-      logo: (
-        <svg viewBox="0 0 120 32" className="h-7 w-auto" aria-hidden="true">
-          <rect x="2" y="6" width="20" height="20" rx="2" fill="none" stroke="#007cc3" strokeWidth="2" />
-          <path d="M7 16 L12 21 L22 11" fill="none" stroke="#007cc3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <text x="28" y="22" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fontWeight="700" fill="#1a1a2e" letterSpacing="-0.01em">Infosys</text>
-        </svg>
-      ),
-    },
+    { name: 'Global Relay', domain: 'Financial Compliance & Archiving' },
+    { name: 'IRIS Software', domain: 'Tax & Accounting SaaS' },
+    { name: 'BT / Openreach', domain: 'Telecom Infrastructure' },
+    { name: 'Telstra', domain: 'Broadband & Provisioning' },
+    { name: 'Infosys', domain: 'Enterprise Consulting' },
   ];
 
   return (
@@ -227,11 +178,11 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-8">
             Products shipped at
           </div>
-          <div className="flex flex-wrap md:flex-nowrap items-center gap-x-10 gap-y-8 md:gap-14">
+          <div className="flex flex-wrap md:flex-nowrap gap-x-8 gap-y-6 md:gap-12">
             {companies.map((company, index) => (
-              <div key={index} className="flex-shrink-0 flex flex-col items-start gap-2">
-                {company.logo}
-                <div className="text-xs text-gray-400">{company.domain}</div>
+              <div key={index} className="flex-shrink-0">
+                <div className="text-base font-medium text-navy-900">{company.name}</div>
+                <div className="text-sm text-gray-500 mt-1">{company.domain}</div>
               </div>
             ))}
           </div>
