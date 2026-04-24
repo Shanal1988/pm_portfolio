@@ -89,12 +89,7 @@ export default function Home({ onNavigate }: HomeProps) {
       name: 'Global Relay',
       domain: 'Financial Compliance & Archiving',
       logo: (
-        <svg viewBox="0 0 160 32" className="h-7 w-auto" aria-hidden="true">
-          <circle cx="16" cy="16" r="12" fill="none" stroke="#1a2b4a" strokeWidth="2.5" />
-          <path d="M16 4 A12 12 0 0 1 28 16" fill="none" stroke="#0078d4" strokeWidth="2.5" strokeLinecap="round" />
-          <circle cx="16" cy="16" r="3" fill="#0078d4" />
-          <text x="36" y="21" fontFamily="system-ui, -apple-system, sans-serif" fontSize="14" fontWeight="700" fill="#1a2b4a" letterSpacing="-0.02em">Global Relay</text>
-        </svg>
+        <img src="/Untitled-design-5.webp" alt="Global Relay" className="h-7 w-auto" />
       ),
     },
     {
