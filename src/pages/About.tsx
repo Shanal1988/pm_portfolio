@@ -8,7 +8,7 @@ export default function About({ onNavigate }: AboutProps) {
   const methodCards = [
     {
       title: 'Map the constraint',
-      description: "Before deciding what to build, map what's actually possible given the vendor ecosystem, regulatory environment, and delivery constraints simultaneously. Most teams start with the solution. I start with the constraint — because the constraint usually contains the answer.",
+      description: "Before deciding what to build, map what's actually possible given the vendor ecosystem, regulatory environment, and delivery constraints simultaneously. Most teams start with the solution. I start with the constraint - because the constraint usually contains the answer.",
     },
     {
       title: 'Find the abstraction layer',
@@ -28,7 +28,7 @@ export default function About({ onNavigate }: AboutProps) {
     {
       dateRange: 'Aug 2025 – Present',
       role: 'Senior Product Manager',
-      company: 'Global Relay — Enterprise SaaS, Financial Compliance & Archiving',
+      company: 'Global Relay - Enterprise SaaS, Financial Compliance & Archiving',
       description: 'Owning product strategy and roadmap across compliance infrastructure, partner API integrations, and self-serve onboarding.',
     },
     {
@@ -40,25 +40,25 @@ export default function About({ onNavigate }: AboutProps) {
     {
       dateRange: 'May 2020 – May 2021',
       role: 'Product Manager',
-      company: 'IRIS Software Group — Tax & Accounting SaaS',
+      company: 'IRIS Software Group - Tax & Accounting SaaS',
       description: 'Led desktop-to-cloud migration of tax compliance platform serving 10,000+ UK accountants. Shipped in 8 months under HMRC regulatory constraints.',
     },
     {
       dateRange: 'Jul 2016 – Apr 2020',
       role: 'Technical Product Manager',
-      company: 'Infosys / BT & Openreach — Telecom Infrastructure',
+      company: 'Infosys / BT & Openreach - Telecom Infrastructure',
       description: 'Delivered API-driven platform for B2B partners Sky, Vodafone, and BT Retail. 20% faster delivery, 15% SLA cost reduction.',
     },
     {
       dateRange: '2014 – 2016',
       role: 'Solution Designer',
-      company: 'Infosys / Telstra — Broadband & Provisioning',
+      company: 'Infosys / Telstra - Broadband & Provisioning',
       description: "Designed omnichannel ordering and provisioning for Telstra's national broadband expansion.",
     },
     {
       dateRange: '2012 – 2014',
       role: 'Business Analyst',
-      company: 'Infosys / DirecTV — Online Ordering Platform',
+      company: 'Infosys / DirecTV - Online Ordering Platform',
       description: "Defined platform and integration requirements for DirecTV's US online ordering system.",
     },
   ];

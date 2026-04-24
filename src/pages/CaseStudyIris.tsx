@@ -28,8 +28,8 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
           <p className="text-xl text-gray-600 leading-relaxed">
             How I led the cloud migration of a tax compliance platform for 10,000+ UK accountants,
             made the build-versus-cut calls under a fixed 8-month timeline, navigated live HMRC
-            regulatory constraints, and shipped a product that was meaningfully better — not just
-            cloud-hosted — for the users who depended on it.
+            regulatory constraints, and shipped a product that was meaningfully better - not just
+            cloud-hosted - for the users who depended on it.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
           <p className="text-gray-700 leading-relaxed mb-4">
             IRIS Element was a desktop tax compliance application used by 10,000+ UK accountants to
             file self-assessment returns for their clients. It was deeply embedded in daily
-            workflows — an accountant at a mid-size firm might process hundreds of returns through
+            workflows - an accountant at a mid-size firm might process hundreds of returns through
             it in a single tax season. Any meaningful disruption would cost their clients time,
             money, and potentially missed HMRC deadlines.
           </p>
@@ -72,7 +72,7 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
             processed in a cloud environment.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            My role was to own scope, prioritisation, and MVP definition — making the explicit
+            My role was to own scope, prioritisation, and MVP definition - making the explicit
             build-versus-cut calls that would determine whether we shipped on time and whether
             the product was worth using when we did.
           </p>
@@ -84,10 +84,10 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
             02 · Why This Problem
           </h2>
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            The migration was the strategic bet — the constraint was what made the thinking matter
+            The migration was the strategic bet - the constraint was what made the thinking matter
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The prioritisation call for this project wasn't whether to migrate — that was a business
+            The prioritisation call for this project wasn't whether to migrate - that was a business
             decision already made. The product prioritisation questions were harder: which workflows
             were genuinely essential to the MVP, and which were legacy complexity that had survived
             in the desktop version because nobody had ever had to justify them?
@@ -99,7 +99,7 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
             the MVP. Everything else was explicitly deferred with a rationale. Second, HMRC
             constraint as a natural filter: certain features that relied on flexible data handling
             couldn't make the cloud architecture within the regulatory boundary. Rather than
-            treating this as a problem, I used it as a forcing function — if a feature couldn't
+            treating this as a problem, I used it as a forcing function - if a feature couldn't
             be built compliantly in 8 months, it wasn't in scope.
           </p>
           <p className="text-gray-700 leading-relaxed">
@@ -118,7 +118,7 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
             The 33-minute workflow contained friction that had been invisible for years
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            I mapped the existing 33-minute core filing workflow step by step — working with
+            I mapped the existing 33-minute core filing workflow step by step - working with
             accountants and the internal tax SME to understand what each step was actually for,
             versus what it had become through years of accumulated workarounds.
           </p>
@@ -131,7 +131,7 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
               <p className="text-gray-700 text-sm leading-relaxed">
                 Several screens in the existing flow existed because the desktop architecture
                 required sequential file handling that a cloud backend could eliminate entirely.
-                These weren't features — they were workarounds for a technical limitation that
+                These weren't features - they were workarounds for a technical limitation that
                 would no longer exist in the cloud version.
               </p>
             </div>
@@ -141,7 +141,7 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
                 Most accountancy firms already stored client files in cloud storage (Google Drive,
                 SharePoint, Dropbox). The desktop version required manual downloads and re-uploads
                 for every filing. API-driven integration with their existing storage would eliminate
-                the entire step — but it required design decisions about which storage providers
+                the entire step - but it required design decisions about which storage providers
                 to support and how to handle the HMRC data residency requirements that applied
                 to where those files lived.
               </p>
@@ -152,7 +152,7 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
                 HMRC imposes strict rules on data residency and access for cloud-hosted tax data.
                 Rather than discovering these late and reworking architecture, I brought legal and
                 compliance in at the start of the design phase. Their input shaped the cloud
-                architecture directly — which added constraint but also prevented the kind of
+                architecture directly - which added constraint but also prevented the kind of
                 late-stage redesign that kills delivery timelines.
               </p>
             </div>
@@ -160,7 +160,7 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
           <p className="text-gray-700 leading-relaxed">
             The research conclusion: roughly 30% of the existing workflow time was friction that
             could be eliminated entirely in the cloud version. The remaining 70% was genuine task
-            work — filing logic, validation, submission. That gave me a concrete redesign target.
+            work - filing logic, validation, submission. That gave me a concrete redesign target.
           </p>
         </section>
 
@@ -204,18 +204,18 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
             05 · Execution
           </h2>
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Hard constraints clarify scope — the HMRC boundary removed debates that would have delayed delivery
+            Hard constraints clarify scope - the HMRC boundary removed debates that would have delayed delivery
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             The 12-person cross-functional team included frontend and backend engineers, UX, a
             Tax SME, architects, and legal/compliance. The coordination challenge wasn't
-            technical — it was keeping the scope locked against the natural pressure to add
+            technical - it was keeping the scope locked against the natural pressure to add
             features as the cloud platform took shape and stakeholders could see what was
             possible.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             I maintained a single prioritised backlog with written rationale for every cut and
-            every deferral. When scope expansion requests came in — and they did — the response
+            every deferral. When scope expansion requests came in - and they did - the response
             was always the same: here's the rationale for the current cut, here's which phase
             this would go into, here's what we'd have to push to accommodate it. That structure
             turned scope negotiations into conversations with a documented outcome rather than
@@ -225,7 +225,7 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
             HMRC's regulatory constraints functioned as an unexpected forcing function. Features
             that couldn't be built compliantly within the architectural boundaries couldn't ship
             regardless of how much anyone wanted them. That removed a category of scope debate
-            entirely — the constraint made the call for us.
+            entirely - the constraint made the call for us.
           </p>
         </section>
 
@@ -252,7 +252,7 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
             Reducing filing time from 33 to 17 minutes has direct commercial value for an
-            accountancy firm — a firm handling 500 returns in a tax season recovers roughly
+            accountancy firm - a firm handling 500 returns in a tax season recovers roughly
             130 hours of fee-earning time. That framing made adoption straightforward to justify
             internally at client firms.
           </p>
@@ -281,13 +281,13 @@ export default function CaseStudyIris({ onNavigate }: CaseStudyIrisProps) {
           <p className="text-gray-700 leading-relaxed mb-4">
             The broader learning from this project is that hard regulatory constraints are a
             product design input, not just a compliance sign-off step. Bringing HMRC requirements
-            into the architecture conversations early — rather than running them in parallel
-            with engineering — prevented rework and gave the team clearer boundaries to design
+            into the architecture conversations early - rather than running them in parallel
+            with engineering - prevented rework and gave the team clearer boundaries to design
             within.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            The prioritisation discipline — a maintained cut list with written rationale, not just
-            a backlog — is the thing I've carried forward most directly. It doesn't prevent
+            The prioritisation discipline - a maintained cut list with written rationale, not just
+            a backlog - is the thing I've carried forward most directly. It doesn't prevent
             stakeholders from wanting more features. It prevents that pressure from becoming
             scope creep.
           </p>

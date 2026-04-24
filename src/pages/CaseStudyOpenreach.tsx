@@ -27,7 +27,7 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             How I translated competing integration requirements from Sky, Vodafone, and BT Retail
-            into a single coherent API-driven scheduling platform — reducing partner delivery time
+            into a single coherent API-driven scheduling platform - reducing partner delivery time
             by 20% and cutting SLA compensation costs by 15% year-on-year on national-scale
             telecom infrastructure.
           </p>
@@ -60,21 +60,21 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
             Openreach is the infrastructure arm of BT Group, responsible for the physical
             broadband and fibre network serving 30M+ UK premises. When a household or business
             orders broadband from Sky, Vodafone, or BT Retail, it's an Openreach field engineer
-            who installs it. The scheduling of that engineer — which one, with which equipment,
-            to which address, within which SLA window — is a matching problem at national scale.
+            who installs it. The scheduling of that engineer - which one, with which equipment,
+            to which address, within which SLA window - is a matching problem at national scale.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             The problem: the existing integration approach was causing delivery delays and
             increasing operational costs. Engineers were being dispatched without the right
             equipment for the network type at the address. Partner systems weren't getting
-            reliable scheduling updates. SLA windows were being missed — and in telecom
+            reliable scheduling updates. SLA windows were being missed - and in telecom
             infrastructure contracts, missed SLAs carry direct financial penalties.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Sky, Vodafone, and BT Retail each had their own scheduling systems, their own
             integration patterns, and their own contractual SLA obligations. The product
-            challenge was whether to build three bespoke integrations — fast to start, expensive
-            to maintain — or design a single platform architecture that all three could consume
+            challenge was whether to build three bespoke integrations - fast to start, expensive
+            to maintain - or design a single platform architecture that all three could consume
             without bespoke builds. That call had significant long-term implications for
             Openreach's ability to onboard future partners.
           </p>
@@ -86,7 +86,7 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
             02 · Why This Problem
           </h2>
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Bespoke integrations were the default path — and the wrong one
+            Bespoke integrations were the default path - and the wrong one
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             The case for tackling the integration architecture rather than building partner by
@@ -102,7 +102,7 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
           <p className="text-gray-700 leading-relaxed">
             Commercially, the SLA penalty structure made every day of delay measurable. 15% of
             SLA compensation costs was a hard number. The investment in a coherent platform
-            architecture had a direct ROI calculation against that baseline — which made the
+            architecture had a direct ROI calculation against that baseline - which made the
             prioritisation case straightforward to make to stakeholders who were otherwise
             resistant to slowing down initial partner delivery for a longer-term architecture.
           </p>
@@ -118,7 +118,7 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             The discovery phase involved structured deep dives with each partner's technical and
-            operations teams to understand their integration requirements — not just what data
+            operations teams to understand their integration requirements - not just what data
             they needed, but what their scheduling systems could consume, what update frequency
             they needed, and where their SLA obligations created hard latency requirements.
           </p>
@@ -126,7 +126,7 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
             <div>
               <div className="font-semibold text-gray-900 mb-1">Engineer specialisation as a matching constraint</div>
               <p className="text-gray-700 text-sm leading-relaxed">
-                Openreach engineers have different certifications for different network types —
+                Openreach engineers have different certifications for different network types -
                 copper, FTTP, and FTTC each require different equipment and training. The
                 scheduling algorithm had to match engineer capability to job type, not just
                 geography and availability. This was the core technical constraint that made
@@ -139,14 +139,14 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
                 Sky, Vodafone, and BT Retail used different internal scheduling systems with
                 different API patterns and different data models. The mapping exercise identified
                 which differences were genuinely structural versus which were implementation
-                choices that could be absorbed in an adapter layer — that distinction shaped
+                choices that could be absorbed in an adapter layer - that distinction shaped
                 the architecture decision.
               </p>
             </div>
             <div>
               <div className="font-semibold text-gray-900 mb-1">SLA trigger points</div>
               <p className="text-gray-700 text-sm leading-relaxed">
-                Each partner's SLA clock started at different points in the scheduling flow —
+                Each partner's SLA clock started at different points in the scheduling flow -
                 some at order creation, some at confirmation, some at engineer dispatch. Understanding
                 exactly where the penalties triggered for each partner was essential to
                 prioritising which parts of the integration had the tightest latency requirements.
@@ -157,7 +157,7 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
             The key discovery: about 70% of what each partner needed from the integration was
             structurally identical. The 30% that differed was mostly presentation logic and
             field mapping, not core scheduling logic. That meant a shared platform with
-            partner-specific adapter configuration was technically viable — and the architecture
+            partner-specific adapter configuration was technically viable - and the architecture
             decision became defensible.
           </p>
         </section>
@@ -168,18 +168,18 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
             04 · Solution and Strategy
           </h2>
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            A single platform with configurable partner adapters — built once, consumed differently
+            A single platform with configurable partner adapters - built once, consumed differently
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             I defined the integration architecture around a shared scheduling API that sat between
             Openreach's engineer management systems and each partner's downstream systems. Core
-            scheduling logic — engineer matching, availability management, SLA window calculation
-            — lived in the shared layer. Partner-specific field mappings and response formatting
+            scheduling logic - engineer matching, availability management, SLA window calculation
+            - lived in the shared layer. Partner-specific field mappings and response formatting
             lived in lightweight adapters per partner.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             This design meant each partner integration was primarily a configuration exercise
-            rather than a bespoke build — reducing initial integration time and making future
+            rather than a bespoke build - reducing initial integration time and making future
             partner onboarding significantly faster. It also meant any improvement to the core
             scheduling algorithm would benefit all partners simultaneously.
           </p>
@@ -203,8 +203,8 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
             The cross-functional delivery involved Openreach's engineering and operations teams,
             each partner's technical integration teams, and the commercial stakeholders managing
             the SLA contracts. The primary execution challenge was translating partner
-            requirements — which arrived as contract language and business rules rather than
-            technical specifications — into developer-ready API contracts.
+            requirements - which arrived as contract language and business rules rather than
+            technical specifications - into developer-ready API contracts.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             I owned the requirements definition process: taking the partner discovery inputs,
@@ -214,8 +214,8 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
             was itself a delivery accelerant.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            The phased rollout went Sky first — as the largest partner with the highest SLA
-            exposure — followed by Vodafone, then BT Retail. Each partner's adapter was built
+            The phased rollout went Sky first - as the largest partner with the highest SLA
+            exposure - followed by Vodafone, then BT Retail. Each partner's adapter was built
             against the shared API without requiring changes to the core scheduling logic.
             The architecture held.
           </p>
@@ -244,7 +244,7 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
             The 15% reduction in SLA compensation costs translated directly to bottom-line
-            savings — these are contractual penalties with hard numbers attached, not proxy
+            savings - these are contractual penalties with hard numbers attached, not proxy
             metrics. The 20% reduction in project delivery time meant faster partner onboarding
             and faster time-to-value on the engineering investment.
           </p>
@@ -267,7 +267,7 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
             The main tension in this project was between stakeholders who wanted to move fast on
             the Sky integration and the argument for investing time upfront in the shared
             architecture. With hindsight, the architecture investment paid back within the first
-            year. But at the start of the project, that case had to be made explicitly — it
+            year. But at the start of the project, that case had to be made explicitly - it
             wasn't obvious to everyone that slower initial delivery was the right trade.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -281,7 +281,7 @@ export default function CaseStudyOpenreach({ onNavigate }: CaseStudyOpenreachPro
             The broader learning: multi-party platform work requires making the architecture
             decision before you understand all the partners' requirements fully. You're designing
             for a constraint set that will expand. The discipline is building something flexible
-            enough to absorb the requirements you don't know yet — without over-engineering for
+            enough to absorb the requirements you don't know yet - without over-engineering for
             hypothetical ones.
           </p>
         </section>

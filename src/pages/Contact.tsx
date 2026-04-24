@@ -29,7 +29,7 @@ export default function Contact() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">LinkedIn</h3>
             <p className="text-gray-600 mb-4 leading-relaxed text-sm">
-              The best place to see the full picture — work history, recommendations, and current focus.
+              The best place to see the full picture - work history, recommendations, and current focus.
             </p>
             <span className="text-sm font-semibold text-navy-900 group-hover:underline">
               linkedin.com/in/shanalagrawal →
