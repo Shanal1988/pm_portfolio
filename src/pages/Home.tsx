@@ -114,7 +114,7 @@ export default function Home({ onNavigate }: HomeProps) {
                   Across financial communications, tax compliance, and telecom infrastructure, I've shipped products where the path forward required figuring out what was even architecturally possible before deciding what to build. My background is infrastructure-deep across regulated markets, and that is exactly what fintech platform problems require.
                 </p>
                 <p>
-                  That foundation applies directly to AI in regulated markets. The compliance workflows I have been building - capturing communications, classifying risk, routing decisions to the right reviewer - are the same workflows AI is now being applied to. The regulatory constraints, the auditability requirements, and the consequences of getting it wrong are identical. Most AI compliance products are built by teams who understand the model but not the regulatory environment. That is the gap I am built to close.
+                  That foundation applies directly to AI in regulated markets. The compliance workflows I have been building, capturing communications, classifying risk, routing decisions to the right reviewer, are the same workflows AI is now being applied to. The regulatory constraints, the auditability requirements, and the consequences of getting it wrong are identical. Most AI compliance products are built by teams who understand the model but not the regulatory environment. That is the gap I am built to close.
                 </p>
               </div>
             </div>
