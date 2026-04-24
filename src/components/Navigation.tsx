@@ -1,4 +1,4 @@
-import { Menu, X, Home, Briefcase, User, Mail } from 'lucide-react';
+import { Menu, X, Home, Briefcase, Lightbulb, User, Mail } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 interface NavigationProps {
@@ -21,6 +21,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
   const navItems = [
     { id: 'home', label: 'Home', icon: Home },
     { id: 'case-studies', label: 'Case Studies', icon: Briefcase },
+    { id: 'side-projects', label: 'Side Projects', icon: Lightbulb },
     { id: 'about', label: 'About', icon: User },
     { id: 'contact', label: 'Contact', icon: Mail },
   ];
